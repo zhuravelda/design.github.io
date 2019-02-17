@@ -8,10 +8,10 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="body">
 
   <heder class="main-header">
-    <div class="logo"><img src="#" class="logo_img" width="37" height="23" alt="Логотип дизайн-студии BRUME"></div>
+    <div class="logo"><img src="img/logo.png" class="logo_img" width="37" height="23" alt="Логотип дизайн-студии BRUME"></div>
     <nav class="main-nav">
       <ul class="header-menu">
         <li class="header-menu__item">ГЛАВНАЯ</li>
@@ -32,9 +32,11 @@
       </div>
       <a class="main-nav__tel" href="tel:+7(800)8234888">+7 (800) 823  48 88</a>
     </nav>
-    <h1 class="main-header__title">Дизайн интерьеров</h1>
-    <p class="main-header__text">Воплотим в жизнь интерьер, который будет радовать лаконичностью и уютом.</p>
-    <a class="main-header__button" href="#">ЗАКАЗАТЬ ДИЗАЙН</a>
+    <div class="main-header__left-block">
+      <h1 class="main-header__title">Дизайн интерьеров</h1>
+      <p class="main-header__text">Воплотим в жизнь интерьер, который будет радовать лаконичностью и уютом.</p>
+      <a class="main-header__button" href="#">ЗАКАЗАТЬ ДИЗАЙН</a>
+    </div>
   </heder>
 
   <main class="main">
@@ -74,18 +76,22 @@
         <li class="portfolio__projects--item">
           <h3>Дизайн интерьера гостиной </h3>
           <p>Дизайн интерьера</p>
+          <img src="img/one-pat-slider.jpg" width="260" height="550" alt="Дизайн интерьера гостиной">
         </li>
         <li class="portfolio__projects--item">
           <h3></h3>
           <p></p>
+          <img src="img/second-pat-slider.jpg" width="390" height="250" alt="Дизайн интерьера">
         </li>
         <li class="portfolio__projects--item">
           <h3>Дизайн столовой в стиле «Бохо»</h3>
           <p>Дизайн интерьера</p>
+          <img src="img/third-pat-slider.jpg" width="260" height="550" alt="Дизайн столовой в стиле «Бохо»">
         </li>
         <li class="portfolio__projects--item">
           <h3>Лофт интерьер для отеля Hiloft</h3>
           <p>Дизайн интерьера</p>
+          <img class="seilor" src="img/fourth-pat-slider.jpg" width="260" height="550" alt="Лофт интерьер для отеля Hiloft">
         </li>
       </ul>
       <button class="portfolio__button--left" type="button"></button>
@@ -103,7 +109,6 @@
             на дом</li>
       </ul>
       <div class="service__block-description">
-        <img class="service__block-description--img" src="" alt="">
         <h3 class="service__block-description--titel">Дизайн коммерческих объектов</h3>
         <p class="service__block-description--text">Работая с коммерческими объектами, студия изучает целевую аудиторию, создаем коммерческие интерьеры такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова</p>
         <p class="service__block-description--namber">532 проекта</p>
@@ -142,6 +147,10 @@
         </li>
       </ul>
     </section>
+    <section class="block-form">
+      <form action=""></form>
+      <div class="block-form__side-picture"></div>
+    </section>
     <section class="reviews">
       <h2 class="reviews__title">Отзывы наших клиентов</h2>
       <ul class="reviews-client">
@@ -149,25 +158,25 @@
           <h3 class="reviews-box__title"></h3>
           <p class="reviews-box__title-service"></p>
           <p class="reviews-box__text"></p>
-          <img class="reviews-box__img"  src="" alt="">
+          <img class="reviews-box__img" width="200" height="190" src="img/HIPSTER.jpg" alt="">
         </li>
-        <li class="reviews-box">
+        <li class="reviews-box reviews-box--active">
           <h3 class="reviews-box__title">Александра Холодная</h3>
           <p class="reviews-box__title-service">Услуга: инерьер детской</p>
           <p class="reviews-box__text">Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и легко, команда выполнила все точно в срок, сделали все как  мы и хотели. В следующий раз обратимся к BRUME!</p>
-          <img class="reviews-box__img"  src="" alt="">
+          <img class="reviews-box__img"  width="200" height="190" src="img/girl.jpg" alt="">
         </li>
         <li class="reviews-box">
           <h3 class="reviews-box__title"></h3>
           <p class="reviews-box__title-service"></p>
           <p class="reviews-box__text"></p>
-          <img class="reviews-box__img"  src="" alt="">
+          <img class="reviews-box__img" width="200" height="190" src="img/girl2.jpg" alt="">
         </li>
         <li class="reviews-box">
           <h3 class="reviews-box__title"></h3>
           <p class="reviews-box__title-service"></p>
           <p class="reviews-box__text"></p>
-          <img class="reviews-box__img"  src="" alt="">
+          <img class="reviews-box__img" width="200" height="190" src="" alt="">
         </li>
       </ul>
       <ul class="reviews-button">
@@ -180,7 +189,7 @@
   </main>
 
   <footer class="main-footer">
-    <div class="logo"><img src="#" class="logo_img" width="37" height="23" alt="Логотип дизайн-студии BRUME"></div>
+    <div class="logo"><img src="img/logo.png" class="logo_img" width="37" height="23" alt="Логотип дизайн-студии BRUME"></div>
     <p class="main-footer__text">BRUME interior, 2017</p>
     <ul class="social">
       <li class="social__item social__item--vkontakte"></li>
