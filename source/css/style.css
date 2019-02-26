@@ -302,22 +302,140 @@ template {
   display: none; }
 
 .body {
-  background-color: #fdfaf3; }
+  background-color: #fdfaf3;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #ffffff; }
+
+.portfolio__title,
+.service__title,
+.stage-project__title,
+.reviews__title {
+  font-family: 'Playfair Display', Times, serif;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: auto;
+  color: #00203a; }
+
+@font-face {
+  font-family: 'mullerthin';
+  src: url("../fonts/fontfabric_-_mullerthin-webfont.woff2") format("woff2"), url("../fonts/fontfabric_-_mullerthin-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'mullerultralight';
+  src: url("../fonts/fontfabric_-_mullerultralight_2-webfont.woff2") format("woff2"), url("../fonts/fontfabric_-_mullerultralight_2-webfont.woff") format("woff");
+  font-weight: 200;
+  font-style: normal; }
+
+.advantages-list__item--namber {
+  font-family: 'Playfair Display', Times, serif;
+  font-weight: 700;
+  font-size: 85px;
+  line-height: auto;
+  color: #fea052;
+  opacity: 0.26; }
+
+.advantages-list__item--title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: auto;
+  color: #1a292f; }
+
+.advantages-list__item--text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: #838383; }
 
 .blume-video {
   background-color: #182c3d;
   background-image: url(../../img/background-video.jpg); }
 
+.blume-video__text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  color: white; }
+
+.header-menu__item {
+  opacity: 0.93;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 42px;
+  color: white;
+  font-family: 'Raleway', Arial, sans-serif; }
+
+.header-menu__item--active {
+  color: #f8a25a; }
+
 .main-footer {
   background-color: #182c3d; }
+
+.main-footer__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #ffc487; }
 
 .main-header {
   background-image: url(../../img/header-background.jpg);
   width: 1163px;
   height: 595px; }
 
+.main-nav__tel {
+  font-family: mullerultralight;
+  font-weight: 400;
+  font-size: 14;
+  line-height: auto;
+  color: white; }
+
 .portfolio__projects {
   background-color: #dddddd; }
+
+.portfolio__list--item {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: auto;
+  color: #7d7d7d; }
+
+.portfolio__list--active {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: auto;
+  color: #00203a; }
+
+.projects-item__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: auto;
+  color: #ffffff; }
+  .projects-item__title--active {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: auto;
+    color: #00203a; }
+
+.reviews-box__title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+  color: #313131; }
+
+.reviews-box__title-service {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: auto;
+  color: #efb172; }
+
+.reviews-box__text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  color: #5e5e5e; }
 
 .reviews-box--active {
   background-color: #ffffff; }
@@ -325,9 +443,78 @@ template {
 .service__block-description {
   background-image: url(../../img/our-service.jpg); }
 
+.service__list--item {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: auto;
+  color: #7d7d7d; }
+
+.service__list--active {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: auto;
+  color: #00203a; }
+
+.service__block-description--title {
+  font-family: 'Playfair Display', Times, serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: auto;
+  color: #00203a; }
+
+.service__block-description--text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  color: #5e5e5e; }
+
+.service__block-description--number {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #00203a; }
+
+.service__block-description--button {
+  font-weight: 800;
+  font-size: 15px;
+  line-height: auto;
+  color: #00203a; }
+
+.stage-item__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 17px;
+  color: #313131; }
+
+.stage-item__text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  color: #5e5e5e; }
+
 .main-header__left-block {
   background-color: #112537;
   opacity: 0.97; }
+
+.main-header__title {
+  font-family: 'Playfair Display', Times, serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: white; }
+
+.main-header__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: auto;
+  color: white; }
+
+.main-header__button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: auto;
+  color: white;
+  text-decoration: none; }
 
 .block-form {
   background-color: #182c3d;

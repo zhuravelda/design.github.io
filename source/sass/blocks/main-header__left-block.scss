@@ -2,3 +2,18 @@
   background-color: $header-color;
   opacity: 0.97;
 }
+
+.main-header__title {
+  font-family: 'Playfair Display', Times, serif;
+  @include PlayfairDisplay (700, 48px, 48px);
+}
+
+.main-header__text {
+  // font-family: mullerultralight;
+  @include mullerultralight (300, 18px, auto);
+}
+
+.main-header__button {
+  @include Raleway (700, 14px, auto);
+  text-decoration: none;
+}

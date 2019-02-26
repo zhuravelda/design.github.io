@@ -1,3 +1,18 @@
 .body {
   background-color: $background-color;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: $main-text-color;
 }
+
+.portfolio__title,
+.service__title,
+.stage-project__title,
+.reviews__title {
+  font-family: 'Playfair Display', Times, serif;
+  @include PlayfairDisplay (700, 45px, auto, $title-blocks);
+}
+
+
+

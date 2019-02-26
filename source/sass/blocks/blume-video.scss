@@ -2,3 +2,7 @@
   background-color: $base-color;
   background-image: url(../../img/background-video.jpg);
 }
+
+.blume-video__text {
+  @include Raleway (400, 22px, 30px);
+}

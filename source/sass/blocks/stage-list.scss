@@ -1,0 +1,7 @@
+.stage-item__title {
+  @include Raleway (600, 24px, 17px, $stage-title);
+}
+
+.stage-item__text {
+  @include Raleway (300, 16px, 25px, $service-text);
+}

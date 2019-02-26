@@ -1,0 +1,11 @@
+.reviews-box__title {
+  @include Raleway (600, 22px, 30px, $stage-title);
+}
+
+.reviews-box__title-service {
+  @include Raleway (700, 16px, auto, $reviews-box__title);
+}
+
+.reviews-box__text {
+  @include Raleway (300, 16px, 25px, $service-text);
+}

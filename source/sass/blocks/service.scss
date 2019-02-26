@@ -1,3 +1,28 @@
 .service__block-description {
   background-image: url(../../img/our-service.jpg);
 }
+
+.service__list {
+  &--item {
+    @include Raleway (300, 18px, auto, $menu-items);
+  }
+  &--active {
+    @include Raleway (600, 18px, auto, $title-blocks);
+  }
+}
+
+.service__block-description {
+  &--title {
+    font-family: 'Playfair Display', Times, serif;
+    @include PlayfairDisplay (400, 30px, auto, $title-blocks);
+  }
+  &--text {
+    @include Raleway (300, 18px, 30px, $service-text);
+  }
+  &--number {
+    @include Raleway (400, 18px, 30px, $title-blocks);
+  }
+  &--button {
+    @include Raleway (800, 15px, auto, $title-blocks);
+  }
+}

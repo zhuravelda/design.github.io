@@ -1,0 +1,14 @@
+.advantages-list__item {
+  &--namber {
+    font-family: 'Playfair Display', Times, serif;
+    @include PlayfairDisplay (700, 85px, auto,$number-color);
+  opacity: 0.26;
+  }
+  &--title {
+    @include Raleway (600, 24px, auto, $title-color);
+  }
+  &--text {
+    @include Raleway (300, 18px, 25px, $advantages-text);
+  }
+
+}
