@@ -11,17 +11,16 @@
 </head>
 
 <body class="body">
-
-  <heder class="main-header">
+  <header class="main-header">
     <div class="logo"><img src="img/logo.png" class="logo_img" width="37" height="23" alt="Логотип дизайн-студии BRUME"></div>
     <nav class="main-nav">
       <ul class="header-menu">
-        <li class="header-menu__item">Главная</li>
-        <li class="header-menu__item header-menu__item--active">Преимущества</li>
-        <li class="header-menu__item">Портфолио</li>
-        <li class="header-menu__item">Наши услуги</li>
-        <li class="header-menu__item">Отзывы</li>
-        <li class="header-menu__item">Контакты</li>
+        <li class="header-menu__item"><a href="#">Главная</a></li>
+        <li class="header-menu__item header-menu__item--active"><a href="#">Преимущества</a></li>
+        <li class="header-menu__item"><a href="#">Портфолио</a></li>
+        <li class="header-menu__item"><a href="#">Наши услуги</a></li>
+        <li class="header-menu__item"><a href="#">Отзывы</a></li>
+        <li class="header-menu__item"><a href="#">Контакты</a></li>
       </ul>
       <ul class="social">
         <li class="social__item social__item--vkontakte"></li>
@@ -39,7 +38,7 @@
       <p class="main-header__text">Воплотим в жизнь интерьер, который будет радовать лаконичностью и уютом.</p>
       <a class="main-header__button" href="#">ЗАКАЗАТЬ ДИЗАЙН</a>
     </div>
-  </heder>
+  </header>
 
   <main class="main">
     <section class="advantages">
@@ -150,7 +149,26 @@
       </ul>
     </section>
     <section class="block-form">
-      <form action=""></form>
+      <form>
+        <p class="block-form__title">Мечтаете об интерьере от BRUME?</p>
+        <fieldset>
+          <legend class="block-form__text">Оставьте контактные данные, менеджер свяжется с вами в течении 15 минут, для уточнения всех деталей.</legend>
+          <p>
+            <label class="block-form__item" for="name">Имя <em>*</em></label>
+            <input type="text" id="name">
+          </p>
+          <p>
+              <label class="block-form__item" for="telephone">Телефон <em>*</em></label>
+              <input type="text" id="telephone">
+            </p>
+          <p>
+            <label class="block-form__item" for="email">E-mail</label>
+            <input type="email" id="email">
+          </p>
+        </fieldset>
+        <p><input class="block-form__button" type="submit" value="Отправить"></p>
+        <p class="submit-description">Нажимая на кнопку, вы соглашаетесь с условиями обработки персональных данных</p>
+      </form>
       <div class="block-form__side-picture"></div>
     </section>
     <section class="reviews">
@@ -178,7 +196,7 @@
           <h3 class="reviews-box__title"></h3>
           <p class="reviews-box__title-service"></p>
           <p class="reviews-box__text"></p>
-          <img class="reviews-box__img" width="200" height="190" src="" alt="">
+          <img class="reviews-box__img" width="200" height="190" src="#" alt="">
         </li>
       </ul>
       <ul class="reviews-button">

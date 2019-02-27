@@ -8,3 +8,24 @@
   width: 680px;
   background-image: url(../../img/kitchen.jpg);
 }
+
+.block-form__title {
+  font-family: 'Playfair Display', Times, serif;
+  @include PlayfairDisplay (700, 28px, 48px, );
+}
+
+.block-form__text {
+  @include Raleway (400, 14px, 24px);
+}
+
+.block-form__item {
+  @include Raleway (300, 14px, 16px);
+}
+
+.block-form__button {
+  @include Raleway (400, 14px, auto);
+}
+
+.submit-description {
+
+}

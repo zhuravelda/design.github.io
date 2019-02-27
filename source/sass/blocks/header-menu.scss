@@ -1,10 +1,10 @@
-.header-menu__item {
+.header-menu__item a {
   opacity: 0.93;
   text-transform: uppercase;
   @include Raleway (600, 20px, 42px);
   font-family: 'Raleway', Arial, sans-serif;
 }
 
-.header-menu__item--active {
+.header-menu__item--active a {
   color: $menu-item-active;
 }

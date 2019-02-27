@@ -360,7 +360,7 @@ template {
   line-height: 30px;
   color: white; }
 
-.header-menu__item {
+.header-menu__item a {
   opacity: 0.93;
   text-transform: uppercase;
   font-weight: 600;
@@ -369,7 +369,7 @@ template {
   color: white;
   font-family: 'Raleway', Arial, sans-serif; }
 
-.header-menu__item--active {
+.header-menu__item--active a {
   color: #f8a25a; }
 
 .main-footer {
@@ -524,3 +524,28 @@ template {
   height: 685px;
   width: 680px;
   background-image: url(../../img/kitchen.jpg); }
+
+.block-form__title {
+  font-family: 'Playfair Display', Times, serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 48px;
+  color: white; }
+
+.block-form__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: white; }
+
+.block-form__item {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: white; }
+
+.block-form__button {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: auto;
+  color: white; }
