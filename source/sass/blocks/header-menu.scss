@@ -8,3 +8,12 @@
 .header-menu__item--active a {
   color: $menu-item-active;
 }
+
+.main-nav__tel,
+.main-nav {
+  display: none;
+}
+
+.logo {
+  position: absolute;
+}

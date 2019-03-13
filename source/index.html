@@ -11,7 +11,9 @@
 </head>
 
 <body class="body">
+  <div class="container">
   <header class="main-header">
+    <div class="wrapper">
     <div class="logo"><img src="img/logo.png" class="logo_img" width="37" height="23" alt="Логотип дизайн-студии BRUME"></div>
     <nav class="main-nav">
       <ul class="header-menu">
@@ -38,15 +40,18 @@
       <p class="main-header__text">Воплотим в жизнь интерьер, который будет радовать лаконичностью и уютом.</p>
       <a class="main-header__button" href="#">ЗАКАЗАТЬ ДИЗАЙН</a>
     </div>
+  </div>
+
   </header>
 
   <main class="main">
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества студии-дизайн BRUME</h2>
+      <div class="wrapper">
       <ul class="advantages-list">
         <li class="advantages-list__item">
           <p class="advantages-list__item--namber">01</p>
-          <h3 class="advantages-list__item--title">Берем весь ремонт на себя</h3>
+          <h3 class="advantages-list__item--title">Берем весь ремонт</br>на себя</h3>
           <p class="advantages-list__item--text">Заботы по дизайну и отделке помещения возьмем на себя, останется дождаться завершения работ и наслаждаться результатом</p>
         </li>
         <li class="advantages-list__item">
@@ -65,13 +70,15 @@
           <p class="advantages-list__item--text">Ценовая политика студии очень лояльна, мы осуществляем контроль всего процесса работы  и получаем результат который делает клиентов счастивыми</p>
         </li>
       </ul>
+    </div>
     </section>
     <section class="portfolio">
+      <div class="wrapper">
       <h1 class="portfolio__title">Портфолио</h1>
       <ul class="portfolio__list">
-        <li class="portfolio__list--item portfolio__list--active">Все проекты</li>
-        <li class="portfolio__list--item">Дизайн интерьеров</li>
-        <li class="portfolio__list--item">Отделочные работы</li>
+        <li><a class="portfolio__list--item portfolio__list--active" href="#">Все проекты</a></li>
+        <li><a class="portfolio__list--item" href="#">Дизайн интерьеров</a></li>
+        <li><a class="portfolio__list--item" href="#">Отделочные работы</a></li>
       </ul>
       <ul class="portfolio__projects">
         <li class="projects__item">
@@ -97,29 +104,38 @@
       </ul>
       <button class="portfolio__button--left" type="button"></button>
       <button class="portfolio__button--right" type="button"></button>
+    </div>
     </section>
     <section class="service">
+      <div class="wrapper">
       <h2 class="service__title">Наши услуги</h2>
       <ul class="service__list">
-        <li class="service__list--item">Дизайн жилого помещения</li>
-        <li class="service__list--item">Дизайн отельных комнат</li>
-        <li class="service__list--item service__list--active">Дизайн коммерческих объектов</li>
-        <li class="service__list--item">Ремонт под ключ</li>
-        <li class="service__list--item">Отделочные работы</li>
-        <li class="service__list--item">Выезд дизайнера
-            на дом</li>
+        <li><a class="service__list--item" href="#">Дизайн жилого помещения</a></li>
+        <li><a class="service__list--item" href="#">Дизайн отельных комнат</a></li>
+        <li><a class="service__list--item service__list--active" href="#">Дизайн коммерческих объектов</a></li>
+        <li><a class="service__list--item" href="#">Ремонт под ключ</a></li>
+        <li><a class="service__list--item" href="#">Отделочные работы</a></li>
+        <li><a class="service__list--item" href="#">Выезд дизайнера
+            на дом</a></li>
       </ul>
+      </div>
       <div class="service__block-description">
+        <div class="service__block-description--img"></div>
         <h3 class="service__block-description--title">Дизайн коммерческих объектов</h3>
         <p class="service__block-description--text">Работая с коммерческими объектами, студия изучает целевую аудиторию, создаем коммерческие интерьеры такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова</p>
         <p class="service__block-description--number">532 проекта</p>
-        <a href="" class="service__block-description--button">КОНСУЛЬТАЦИЯ</a>
+        <a class="service__block-description--button" href="#">КОНСУЛЬТАЦИЯ</a>
       </div>
+
     </section>
     <section class="blume-video">
-      <p class="blume-video__text">О  студии дизайна интерьеров BRUME за 2 минуты</p>
+      <div class="wrapper">
+      <a class="blume-video__button"></a>
+      <p class="blume-video__text">О студии дизайна интерьеров BRUME за 2 минуты</p>
+      </div>
     </section>
     <section class="stage-projeсt">
+      <div class="wrapper">
       <h2 class="stage-project__title">Этапы работы</h2>
       <ul class="stage-list">
         <li class="stage-item">
@@ -147,31 +163,35 @@
           <p class="stage-item__text">Подбираем мебель, отделочные материалы, светильники и текстиль. Декорируем интерьер.</p>
         </li>
       </ul>
+      </div>
     </section>
     <section class="block-form">
       <form>
+        <div class="wrapper">
         <p class="block-form__title">Мечтаете об интерьере от BRUME?</p>
-        <fieldset>
+        <fieldset class="wrapper-form">
           <legend class="block-form__text">Оставьте контактные данные, менеджер свяжется с вами в течении 15 минут, для уточнения всех деталей.</legend>
-          <p>
-            <label class="block-form__item" for="name">Имя <em>*</em></label>
-            <input type="text" id="name">
+          <p class="form-item__wrapper">
+            <label class="block-form__item" for="name"></label>
+            <input class="form-style" type="text" id="name" placeholder="Имя *">
           </p>
-          <p>
-              <label class="block-form__item" for="telephone">Телефон <em>*</em></label>
-              <input type="text" id="telephone">
+          <p class="form-item__wrapper">
+              <label class="block-form__item" for="telephone"></label>
+              <input class="form-style" type="text" id="telephone" placeholder="Телефон *">
             </p>
-          <p>
-            <label class="block-form__item" for="email">E-mail</label>
-            <input type="email" id="email">
+          <p class="form-item__wrapper">
+            <label class="block-form__item" for="email"></label>
+            <input class="form-style" type="email" id="email" placeholder="E-mail">
           </p>
         </fieldset>
-        <p><input class="block-form__button" type="submit" value="Отправить"></p>
-        <p class="submit-description">Нажимая на кнопку, вы соглашаетесь с условиями обработки персональных данных</p>
+        <input class="block-form__button" type="submit" value="Отправить">
+        <p class="submit-description">Нажимая на кнопку, вы<br>соглашаетесь с условиями<br>обработки персональных данных</p>
+        </div>
       </form>
       <div class="block-form__side-picture"></div>
     </section>
     <section class="reviews">
+      <div class="wrapper">
       <h2 class="reviews__title">Отзывы наших клиентов</h2>
       <ul class="reviews-client">
         <li class="reviews-box">
@@ -181,10 +201,10 @@
           <img class="reviews-box__img" width="200" height="190" src="img/HIPSTER.jpg" alt="">
         </li>
         <li class="reviews-box reviews-box--active">
+          <img class="reviews-box__img"  src="img/girl.png" alt="">
           <h3 class="reviews-box__title">Александра Холодная</h3>
           <p class="reviews-box__title-service">Услуга: инерьер детской</p>
           <p class="reviews-box__text">Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и легко, команда выполнила все точно в срок, сделали все как  мы и хотели. В следующий раз обратимся к BRUME!</p>
-          <img class="reviews-box__img"  width="200" height="190" src="img/girl.jpg" alt="">
         </li>
         <li class="reviews-box">
           <h3 class="reviews-box__title"></h3>
@@ -205,20 +225,25 @@
         <li class="reviews-button__item"></li>
         <li class="reviews-button__item"></li>
       </ul>
+      </div>
     </section>
   </main>
 
   <footer class="main-footer">
-    <div class="logo"><img src="img/logo.png" class="logo_img" width="37" height="23" alt="Логотип дизайн-студии BRUME"></div>
+    <div class="wrapper">
+    <img src="img/logo.png" class="main-footer__logo-img" width="40" height="70" alt="Логотип дизайн-студии BRUME">
+    <div class="main-footer__wrapper">
     <p class="main-footer__text">BRUME interior, 2017</p>
-    <ul class="social">
+    <ul class="social main-footer__child-active">
       <li class="social__item social__item--vkontakte"></li>
       <li class="social__item social__item--instagram"></li>
       <li class="social__item social__item--facebook"></li>
     </ul>
     <p class="main-footer__text">HolodnayaDesign</p>
+    </div>
+    </div>
   </footer>
-
+</div>
 </body>
 
 </html>

@@ -1,21 +1,27 @@
 .block-form {
   background-color: $base-color;
-  height: 200px;
+  padding-bottom: 90px;
+  padding-top: 30px;
 }
 
-.block-form__side-picture {
-  height: 685px;
-  width: 680px;
+.block-form {
+  // height: 910px;
   background-image: url(../../img/kitchen.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .block-form__title {
+  margin-bottom: 20px;
+  text-align: center;
   font-family: 'Playfair Display', Times, serif;
-  @include PlayfairDisplay (700, 28px, 48px, );
+  @include PlayfairDisplay (700, 45px, 54px);
 }
 
 .block-form__text {
-  @include Raleway (400, 14px, 24px);
+  margin-bottom: 30px;
+  text-align: center;
+  @include Raleway (400, 18px, 24px);
 }
 
 .block-form__item {
@@ -23,9 +29,44 @@
 }
 
 .block-form__button {
-  @include Raleway (400, 14px, auto);
+  text-transform: uppercase;
+  @include Raleway (700, 18px, auto);
+  letter-spacing: 3px;
+  border: none;
+  border-radius: 4px;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  padding: 25px 0;
+  background: $button-color;
+}
+
+.wrapper-form {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form-style {
+  margin-bottom: 45px;
+  width: 100%;
+  border: none;
+  background: none;
+  border-bottom: solid 2px rgba($color: #ffffff, $alpha: 0.53);
+}
+
+.form-item__wrapper {
+  position: relative;
+}
+
+.block-form__item {
+  position: absolute;
 }
 
 .submit-description {
-
+  text-align: center;
+  @include Raleway (300, 16px, auto);
+  opacity: 0.7;
+  letter-spacing: 1px;
 }
+

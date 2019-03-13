@@ -12,3 +12,32 @@
   }
 
 }
+
+.advantages-list {
+  list-style: none;
+  padding-left: 0;
+  padding-top: 18px;
+}
+
+.advantages-list__item--namber {
+  color: red;
+}
+
+.advantages-list__item--namber,
+.advantages-list__item--title,
+.advantages-list__item--text {
+  margin: 0;
+}
+
+.advantages-list__item--title {
+  padding-bottom: 20px;
+}
+
+.advantages-list__item--namber {
+  margin-bottom: 5px;
+}
+
+.advantages {
+  margin-bottom: 110px;
+}
+

@@ -1,11 +1,21 @@
 .reviews-box__title {
+  margin-top: -30px;
+  margin-bottom: 0;
   @include Raleway (600, 22px, 30px, $stage-title);
 }
 
 .reviews-box__title-service {
-  @include Raleway (700, 16px, auto, $reviews-box__title);
+  margin-top: 5px;
+  letter-spacing: 1px;
+  @include Raleway (700, 18px, auto, $reviews-box__title);
 }
 
 .reviews-box__text {
-  @include Raleway (300, 16px, 25px, $service-text);
+  letter-spacing: 1px;
+  @include Raleway (300, 20px, 30px, $service-text);
+}
+
+.reviews-box {
+  text-align: center;
+  padding-bottom: 30px;
 }

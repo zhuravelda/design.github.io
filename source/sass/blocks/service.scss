@@ -1,28 +1,55 @@
-.service__block-description {
-  background-image: url(../../img/our-service.jpg);
+
+.service {
+  padding-bottom: 110px;
 }
 
 .service__list {
+  list-style: none;
+  padding-left: 0;
+  padding-bottom: 10px;
   &--item {
-    @include Raleway (300, 18px, auto, $menu-items);
+    text-decoration: none;
+    @include Raleway (300, 22px, auto, $menu-items);
   }
   &--active {
-    @include Raleway (600, 18px, auto, $title-blocks);
+    padding-left: 10px;
+    @include Raleway (600, 22px, auto, $title-blocks);
   }
 }
 
 .service__block-description {
+  &--img {
+    height: 390px;
+    background-repeat: no-repeat;
+    background-image: url(../../img/our-service.jpg);
+    }
   &--title {
+    display: none;
     font-family: 'Playfair Display', Times, serif;
     @include PlayfairDisplay (400, 30px, auto, $title-blocks);
   }
   &--text {
-    @include Raleway (300, 18px, 30px, $service-text);
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    @include Raleway (300, 20px, 30px, $service-text);
   }
   &--number {
+    display: none;
     @include Raleway (400, 18px, 30px, $title-blocks);
   }
   &--button {
+    border: solid 2px $header-color;
+    text-decoration: none;
+    margin: 0 auto;
+    display: block;
+    padding: 18px 0;
+    width: 215px;
+    text-align: center;
     @include Raleway (800, 15px, auto, $title-blocks);
   }
+}
+
+.service__list li {
+  margin-bottom: 33px;
 }

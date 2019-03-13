@@ -17,3 +17,15 @@
   }
 }
 
+.portfolio__projects {
+  height: 531px;
+  display: flex;
+  margin-bottom: 130px;
+}
+
+.portfolio__button--left,
+.portfolio__button--right {
+  display: none;
+}
+
+

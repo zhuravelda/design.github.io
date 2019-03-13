@@ -1,8 +1,29 @@
 .blume-video {
+  height: 620px;
   background-color: $base-color;
   background-image: url(../../img/background-video.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.blume-video__button {
+  background-image: url(../../img/video-button.png);
+  background-repeat: no-repeat;
+  background-position-x: -18px;
+  background-position-y: -15px;
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  top: 225px;
+  margin: 0 auto;
+  cursor: pointer;
 }
 
 .blume-video__text {
   @include Raleway (400, 22px, 30px);
+  text-align: center;
+  position: relative;
+  top: 230px;
 }
