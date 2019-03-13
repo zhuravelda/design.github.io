@@ -1,0 +1,69 @@
+.body {
+  font-family: 'Raleway', Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: $main-text-color;
+}
+
+body {
+  min-width: 320px; // лучше задать на body, чтобы не выпадали фоны
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.portfolio__title,
+.service__title,
+.stage-project__title,
+.reviews__title {
+  font-family: 'Playfair Display', Times, serif;
+  @include PlayfairDisplay (700, 45px, auto, $title-blocks);
+}
+
+.container {
+  background-color: orange;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 290px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .wrapper {
+    margin: 0 auto;
+    padding-left: 37px;
+    padding-right: 37px;
+    max-width: 694px;
+  }
+
+  .container {
+    background-color: orange;
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+

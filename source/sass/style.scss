@@ -1,4 +1,9 @@
 @import "normalize";
+@import "mixin";
+@import "var";
+@import "reboot";
+@import "fonts";
+
 @import "blocks/advantages";
 @import "blocks/blume-video";
 @import "blocks/header-menu";
@@ -19,3 +24,9 @@
 @import "blocks/stage-item";
 @import "blocks/stage-list";
 @import "blocks/stage-projeсt";
+@import "blocks/main-header__left-block";
+@import "blocks/block-form";
+
+
+
+

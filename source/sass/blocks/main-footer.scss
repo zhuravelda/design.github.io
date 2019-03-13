@@ -1,0 +1,32 @@
+.main-footer {
+  position: relative;
+  padding-top: 100px;
+  height: 408px;
+  text-align: center;
+  background-color: $base-color;
+}
+
+.main-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.main-footer__text {
+  margin: 0;
+  @include Raleway (500, 20px, 30px,  $main-footer__text);
+}
+
+.main-footer__child-active {
+  order: -1;
+}
+
+.main-footer__logo-img {
+  height: 40px;
+  width: 110px;
+  margin-left: 42px;
+  margin-bottom: 26px;
+}
+
+

@@ -1,0 +1,43 @@
+.advantages-list__item {
+  &--namber {
+    font-family: 'Playfair Display', Times, serif;
+    @include PlayfairDisplay (700, 85px, auto,$number-color);
+  opacity: 0.26;
+  }
+  &--title {
+    @include Raleway (600, 24px, auto, $title-color);
+  }
+  &--text {
+    @include Raleway (300, 18px, 25px, $advantages-text);
+  }
+
+}
+
+.advantages-list {
+  list-style: none;
+  padding-left: 0;
+  padding-top: 18px;
+}
+
+.advantages-list__item--namber {
+  color: red;
+}
+
+.advantages-list__item--namber,
+.advantages-list__item--title,
+.advantages-list__item--text {
+  margin: 0;
+}
+
+.advantages-list__item--title {
+  padding-bottom: 20px;
+}
+
+.advantages-list__item--namber {
+  margin-bottom: 5px;
+}
+
+.advantages {
+  margin-bottom: 110px;
+}
+

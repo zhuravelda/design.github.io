@@ -1,0 +1,27 @@
+@mixin mullerthin ($weight, $size, $height, $color: white) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+}
+
+@mixin mullerultralight ($weight, $size, $height, $color: white) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+}
+
+@mixin Raleway ($weight, $size, $height, $color: white) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+}
+
+@mixin PlayfairDisplay ($weight, $size, $height, $color: white) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+}

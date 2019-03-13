@@ -1,0 +1,22 @@
+// .main-header {
+//   background-image: url(../../img/header-background.jpg);
+//   width: 1163px;
+//   height: 595px;
+// }
+.main-header {
+  height: 100%;
+  padding-top: 165px;
+  background-image: url(../../img/header-background-m.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 443px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    height: 947px;
+    // padding-top: 0;
+  }
+
+
+}

@@ -1,0 +1,56 @@
+.main-header__title {
+  font-family: 'Playfair Display', Times, serif;
+  @include PlayfairDisplay (700, 48px, 48px);
+  margin-top: 0;
+}
+
+.main-header__text {
+  margin-bottom: 30px;
+  @include mullerultralight (300, 18px, auto);
+}
+
+.main-header__button {
+  @include Raleway (700, 14px, auto);
+  text-decoration: none;
+  margin: 0 auto;
+  display: block;
+  padding: 18px 0;
+  width: 223px;
+  text-align: center;
+  background-color: $button-color;
+}
+
+.main-header__title,
+.main-header__text {
+  text-align: center;
+}
+
+
+
+@media (min-width: $tablet-width) {
+  .main-header__title {
+    @include PlayfairDisplay (700, 100px, 100px);
+    margin-top: 130px;
+    letter-spacing: 2px;
+  }
+
+  .main-header__text {
+    margin-bottom: 60px;
+    @include mullerultralight (300, 26px, auto);
+    letter-spacing: 2px;
+  }
+
+  .main-header__button {
+    @include Raleway (700, 30px, auto);
+    letter-spacing: 3px;
+    text-decoration: none;
+    margin: 0 auto;
+    display: block;
+    padding: 40px 0;
+    width: 440px;
+    text-align: center;
+    background-color: $button-color;
+  }
+
+
+}
