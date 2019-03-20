@@ -3,16 +3,33 @@
   text-transform: uppercase;
   @include Raleway (600, 20px, 42px);
   font-family: 'Raleway', Arial, sans-serif;
+  letter-spacing: 2px;
+}
+
+.header-menu__item {
+  margin-bottom: 20px;
+}
+
+.header-menu {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
 }
 
 .header-menu__item--active a {
   color: $menu-item-active;
 }
 
-.main-nav__tel,
 .main-nav {
+  // display: none;
+}
+
+.main-nav__tel {
   display: none;
 }
+
+
 
 .logo {
   position: absolute;

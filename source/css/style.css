@@ -448,13 +448,22 @@ img {
   font-size: 20px;
   line-height: 42px;
   color: white;
-  font-family: 'Raleway', Arial, sans-serif; }
+  font-family: 'Raleway', Arial, sans-serif;
+  letter-spacing: 2px; }
+
+.header-menu__item {
+  margin-bottom: 20px; }
+
+.header-menu {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px; }
 
 .header-menu__item--active a {
   color: #f8a25a; }
 
-.main-nav__tel,
-.main-nav {
+.main-nav__tel {
   display: none; }
 
 .logo {
@@ -478,7 +487,7 @@ img {
 .main-footer {
   position: relative;
   padding-top: 100px;
-  height: 408px;
+  padding-bottom: 135px;
   text-align: center;
   background-color: #182c3d; }
 
@@ -509,11 +518,12 @@ img {
 
 .main-footer__logo-img {
   height: 40px;
-  width: 110px;
-  margin-left: 42px;
-  margin-bottom: 26px; }
+  width: 70px;
+  margin-bottom: 30px; }
 
 .main-header {
+  background-blend-mode: multiply;
+  background-color: rgba(17, 37, 55, 0.88);
   height: 100%;
   background-image: url(../../img/header-background-m.jpg);
   background-repeat: no-repeat;
@@ -521,12 +531,6 @@ img {
   height: 443px;
   position: relative;
   padding-bottom: 165px; }
-
-.main-header .wrapper {
-  background-color: #112537;
-  opacity: 0.88;
-  height: 100%;
-  padding-top: 165px; }
 
 .main-nav__tel {
   font-family: mullerultralight;
@@ -536,7 +540,24 @@ img {
   color: white; }
 
 .main-nav {
-  position: relative; }
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #112537;
+  padding-top: 110px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: none; }
+
+.menu-button {
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 68px;
+  height: 24px;
+  background-color: #fff; }
 
 .portfolio__title {
   text-align: center; }
@@ -594,7 +615,7 @@ img {
 
 .reviews {
   padding-top: 100px;
-  padding-bottom: 85px; }
+  padding-bottom: 150px; }
 
 .reviews__title {
   text-align: center;
@@ -644,10 +665,35 @@ img {
   text-align: center;
   padding-bottom: 30px; }
 
+.reviews-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+  width: 144px; }
+
+.reviews-button__item {
+  height: 3px;
+  width: 25px;
+  background-color: red;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #1a444a;
+  opacity: 0.2; }
+
 .reviews-box--active {
   background-color: #ffffff; }
 
-.social {
+.reviews-client {
+  margin-bottom: 40px; }
+
+.social,
+.nav-social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -658,6 +704,9 @@ img {
   padding: 0;
   margin-bottom: 40px;
   width: 236px; }
+
+.nav-social {
+  width: 200px; }
 
 .social__item,
 .social__item--menu {
@@ -675,26 +724,45 @@ img {
   height: 47px;
   width: 47px; }
 
-.social__item--vkontakte,
 .social__header-item--vkontakte {
+  background-position: center;
+  background-image: url(../../img/vk.png);
+  background-repeat: no-repeat;
+  background-size: 24px 17px; }
+
+.social__header-item--instagram {
+  background-position: center;
+  background-image: url(../../img/instagram.png);
+  background-repeat: no-repeat;
+  background-size: 22px 22px; }
+
+.social__header-item--facebook {
+  background-position: center;
+  background-image: url(../../img/facebook.png);
+  background-repeat: no-repeat;
+  background-size: 13px 22px; }
+
+.social__item--vkontakte {
   background-position: center;
   background-image: url(../../img/vk.png);
   background-repeat: no-repeat;
   background-size: 31px 19px; }
 
-.social__item--instagram,
-.social__header-item--instagram {
+.social__item--instagram {
   background-position: center;
   background-image: url(../../img/instagram.png);
   background-repeat: no-repeat;
   background-size: 27px 26px; }
 
-.social__item--facebook,
-.social__header-item--facebook {
+.social__item--facebook {
   background-position: center;
   background-image: url(../../img/facebook.png);
   background-repeat: no-repeat;
   background-size: 13px 26px; }
+
+.social__item a {
+  height: 30px;
+  width: 30px; }
 
 .service {
   padding-bottom: 110px; }
@@ -805,14 +873,16 @@ img {
   font-size: 48px;
   line-height: 48px;
   color: white;
-  margin-top: 0; }
+  margin-top: 0;
+  letter-spacing: 1px; }
 
 .main-header__text {
   margin-bottom: 30px;
   font-weight: 300;
   font-size: 18px;
   line-height: auto;
-  color: white; }
+  color: white;
+  letter-spacing: 1px; }
 
 .main-header__button {
   font-weight: 700;
@@ -825,7 +895,8 @@ img {
   padding: 18px 0;
   width: 223px;
   text-align: center;
-  background-color: #f8a25a; }
+  background-color: #f8a25a;
+  letter-spacing: 1px; }
 
 .main-header__title,
 .main-header__text {
@@ -840,12 +911,14 @@ img {
   background-repeat: no-repeat;
   background-position: 0 0; }
 
-.block-form {
-  background-color: #182c3d;
-  padding-bottom: 90px;
-  padding-top: 30px; }
+.main-header__left-block {
+  padding-top: 165px; }
 
 .block-form {
+  background-blend-mode: multiply;
+  background-color: rgba(24, 44, 61, 0.6);
+  padding-bottom: 90px;
+  padding-top: 30px;
   background-image: url(../../img/kitchen.jpg);
   background-repeat: no-repeat;
   background-size: cover; }
@@ -865,9 +938,12 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  color: white; }
+  color: white;
+  letter-spacing: 1px;
+  opacity: 0.7; }
 
 .block-form__item {
+  position: absolute;
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;
@@ -894,17 +970,28 @@ img {
   padding: 0; }
 
 .form-style {
-  margin-bottom: 45px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 40px;
   width: 100%;
   border: none;
   background: none;
-  border-bottom: solid 2px rgba(255, 255, 255, 0.53); }
+  border-bottom: solid 2px rgba(255, 255, 255, 0.7);
+  padding-bottom: 10px;
+  padding-left: 7px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.form-style::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.8); }
+
+.form-style::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.8); }
+
+.form-style::placeholder {
+  color: rgba(255, 255, 255, 0.8); }
 
 .form-item__wrapper {
   position: relative; }
-
-.block-form__item {
-  position: absolute; }
 
 .submit-description {
   text-align: center;
