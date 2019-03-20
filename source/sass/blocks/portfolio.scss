@@ -5,6 +5,7 @@
 .portfolio__list {
   list-style: none;
   padding-left: 0;
+  padding-bottom: 1px;
 }
 
 .portfolio__title {
@@ -12,10 +13,34 @@
 }
 
 .portfolio__list li {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .portfolio__list--item {
   text-decoration: none;
 }
+
+
+// @media (min-width: $tablet-width) {
+//   .portfolio__title {
+//     text-align: left;
+//   }
+
+//   .portfolio__list {
+//     display: flex;
+//     justify-content: space-between;
+//   }
+
+//   .portfolio__projects {
+//     min-height: 615px;
+//   }
+
+// }
+
+// @media (min-width: $desktop-width) {
+//   .portfolio__list {
+//     width:570px;
+//   }
+
+// }
 

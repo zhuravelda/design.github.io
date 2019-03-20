@@ -5,18 +5,35 @@
 // }
 .main-header {
   height: 100%;
-  padding-top: 165px;
   background-image: url(../../img/header-background-m.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 443px;
+  position: relative;
+  padding-bottom: 165px;
 }
 
-@media (min-width: $tablet-width) {
-  .main-header {
-    height: 947px;
-    // padding-top: 0;
-  }
-
-
+.main-header .wrapper {
+  background-color: #112537;
+  opacity: 0.88;
+  height: 100%;
+  padding-top: 165px;
 }
+
+
+
+// @media (min-width: $tablet-width) {
+//   .main-header {
+//     height: 947px;
+//     // padding-top: 0;
+//   }
+
+// }
+
+
+// @media (min-width: $desktop-width) {
+//   .main-header {
+//     height: 605px;
+//   }
+
+// }

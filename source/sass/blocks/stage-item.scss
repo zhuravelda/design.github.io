@@ -4,6 +4,15 @@
 
 .stage-item {
   margin-bottom: 50px;
+  position: relative;
+
+  &--line {
+    position: absolute;
+    top: 40px;
+    height: 1px;
+    width: 40px;
+    background-color: #5e5e5e;
+  }
 }
 
 .stage-item__text {
