@@ -349,17 +349,6 @@ img {
   padding-right: 15px;
   max-width: 290px; }
 
-@media (min-width: 768px) {
-  .wrapper {
-    margin: 0 auto;
-    padding-left: 37px;
-    padding-right: 37px;
-    max-width: 694px; }
-  .container {
-    background-color: orange;
-    width: 768px;
-    margin: 0 auto; } }
-
 @font-face {
   font-family: 'mullerthin';
   src: url("../fonts/fontfabric_-_mullerthin-webfont.woff2") format("woff2"), url("../fonts/fontfabric_-_mullerthin-webfont.woff") format("woff");
@@ -387,6 +376,7 @@ img {
   color: #1a292f; }
 
 .advantages-list__item--text {
+  letter-spacing: 1px;
   font-weight: 300;
   font-size: 18px;
   line-height: 25px;
@@ -412,14 +402,20 @@ img {
   margin-bottom: 5px; }
 
 .advantages {
-  margin-bottom: 110px; }
+  margin-bottom: 90px; }
 
 .blume-video {
+  position: relative;
   height: 620px;
   background-color: #182c3d;
   background-image: url(../../img/background-video.jpg);
   background-repeat: no-repeat;
   background-position: center; }
+
+.blume-video-bg {
+  background-color: #182c3d;
+  height: 100%;
+  opacity: 0.7; }
 
 .blume-video__button {
   background-image: url(../../img/video-button.png);
@@ -431,7 +427,7 @@ img {
   border-radius: 50%;
   display: block;
   position: relative;
-  top: 225px;
+  top: -400px;
   margin: 0 auto;
   cursor: pointer; }
 
@@ -442,7 +438,8 @@ img {
   color: white;
   text-align: center;
   position: relative;
-  top: 230px; }
+  top: -390px;
+  letter-spacing: 1px; }
 
 .header-menu__item a {
   opacity: 0.93;
@@ -463,10 +460,20 @@ img {
 .logo {
   position: absolute; }
 
-.logo {
+.header-menu {
+  list-style: none; }
+
+.header-menu a {
+  text-decoration: none; }
+
+.header-logo {
   position: absolute;
-  top: 27px;
-  left: -15px; }
+  top: 25px;
+  left: 17px; }
+
+.logo_img {
+  height: 23px;
+  width: 37px; }
 
 .main-footer {
   position: relative;
@@ -508,15 +515,18 @@ img {
 
 .main-header {
   height: 100%;
-  padding-top: 165px;
   background-image: url(../../img/header-background-m.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 443px; }
+  height: 443px;
+  position: relative;
+  padding-bottom: 165px; }
 
-@media (min-width: 768px) {
-  .main-header {
-    height: 947px; } }
+.main-header .wrapper {
+  background-color: #112537;
+  opacity: 0.88;
+  height: 100%;
+  padding-top: 165px; }
 
 .main-nav__tel {
   font-family: mullerultralight;
@@ -525,18 +535,22 @@ img {
   line-height: auto;
   color: white; }
 
+.main-nav {
+  position: relative; }
+
 .portfolio__title {
   text-align: center; }
 
 .portfolio__list {
   list-style: none;
-  padding-left: 0; }
+  padding-left: 0;
+  padding-bottom: 1px; }
 
 .portfolio__title {
   margin-bottom: 40px; }
 
 .portfolio__list li {
-  margin-bottom: 30px; }
+  margin-bottom: 25px; }
 
 .portfolio__list--item {
   text-decoration: none; }
@@ -568,7 +582,7 @@ img {
     color: #00203a; }
 
 .portfolio__projects {
-  height: 531px;
+  padding-bottom: 140px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -645,7 +659,8 @@ img {
   margin-bottom: 40px;
   width: 236px; }
 
-.social__item {
+.social__item,
+.social__item--menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -660,19 +675,22 @@ img {
   height: 47px;
   width: 47px; }
 
-.social__item--vkontakte {
+.social__item--vkontakte,
+.social__header-item--vkontakte {
   background-position: center;
   background-image: url(../../img/vk.png);
   background-repeat: no-repeat;
   background-size: 31px 19px; }
 
-.social__item--instagram {
+.social__item--instagram,
+.social__header-item--instagram {
   background-position: center;
   background-image: url(../../img/instagram.png);
   background-repeat: no-repeat;
   background-size: 27px 26px; }
 
-.social__item--facebook {
+.social__item--facebook,
+.social__header-item--facebook {
   background-position: center;
   background-image: url(../../img/facebook.png);
   background-repeat: no-repeat;
@@ -692,7 +710,6 @@ img {
     line-height: auto;
     color: #7d7d7d; }
   .service__list--active {
-    padding-left: 10px;
     font-weight: 600;
     font-size: 22px;
     line-height: auto;
@@ -712,8 +729,6 @@ img {
   color: #00203a; }
 
 .service__block-description--text {
-  margin-left: 15px;
-  margin-right: 10px;
   margin-bottom: 50px;
   font-weight: 300;
   font-size: 20px;
@@ -747,20 +762,28 @@ img {
   margin-bottom: 40px; }
 
 .stage-item {
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  position: relative; }
+  .stage-item--line {
+    position: absolute;
+    top: 40px;
+    height: 1px;
+    width: 40px;
+    background-color: #5e5e5e; }
 
 .stage-item__text {
   font-size: 20px; }
 
 .stage-item__title {
+  margin-bottom: 35px;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 17px;
+  font-size: 22px;
+  line-height: 18px;
   color: #313131; }
 
 .stage-item__text {
   font-weight: 300;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 25px;
   color: #5e5e5e; }
 
@@ -774,7 +797,7 @@ img {
   padding: 0; }
 
 .stage-projeсt {
-  padding-bottom: 50px; }
+  padding-bottom: 60px; }
 
 .main-header__title {
   font-family: 'Playfair Display', Times, serif;
@@ -808,34 +831,14 @@ img {
 .main-header__text {
   text-align: center; }
 
-@media (min-width: 768px) {
-  .main-header__title {
-    font-weight: 700;
-    font-size: 100px;
-    line-height: 100px;
-    color: white;
-    margin-top: 130px;
-    letter-spacing: 2px; }
-  .main-header__text {
-    margin-bottom: 60px;
-    font-weight: 300;
-    font-size: 26px;
-    line-height: auto;
-    color: white;
-    letter-spacing: 2px; }
-  .main-header__button {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: auto;
-    color: white;
-    letter-spacing: 3px;
-    text-decoration: none;
-    margin: 0 auto;
-    display: block;
-    padding: 40px 0;
-    width: 440px;
-    text-align: center;
-    background-color: #f8a25a; } }
+.arrow {
+  height: 58px;
+  width: 14px;
+  margin: 0 auto;
+  margin-top: 30px;
+  background-image: url(../../img/Arrow-OutRight-icon.png);
+  background-repeat: no-repeat;
+  background-position: 0 0; }
 
 .block-form {
   background-color: #182c3d;

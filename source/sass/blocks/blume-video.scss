@@ -1,9 +1,16 @@
 .blume-video {
+  position: relative;
   height: 620px;
   background-color: $base-color;
   background-image: url(../../img/background-video.jpg);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.blume-video-bg {
+  background-color: $video-block-bg;
+  height: 100%;
+  opacity: 0.7;
 }
 
 .blume-video__button {
@@ -16,7 +23,7 @@
   border-radius: 50%;
   display: block;
   position: relative;
-  top: 225px;
+  top: -400px;
   margin: 0 auto;
   cursor: pointer;
 }
@@ -25,5 +32,22 @@
   @include Raleway (400, 22px, 30px);
   text-align: center;
   position: relative;
-  top: 230px;
+  top: -390px;
+  letter-spacing: 1px;
 }
+
+
+// @media (min-width: $tablet-width) {
+//   .blume-video {
+//     height: 810px;
+//   }
+
+// }
+
+// @media (min-width: $desktop-width) {
+//   .blume-video {
+//     height: 600px;
+//   }
+
+// }
+

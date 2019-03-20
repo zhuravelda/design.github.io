@@ -18,7 +18,7 @@
 }
 
 .portfolio__projects {
-  height: 531px;
+  padding-bottom: 140px;
   display: flex;
   margin-bottom: 130px;
 }
@@ -27,5 +27,12 @@
 .portfolio__button--right {
   display: none;
 }
+
+// @media (min-width: $desktop-width) {
+//   .portfolio__projects {
+//     margin-bottom: 70px;
+//   }
+
+// }
 
 
