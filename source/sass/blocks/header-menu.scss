@@ -44,27 +44,27 @@
 }
 
 
-// @media (min-width: $tablet-width) {
-// .main-nav__tel,
-// .main-nav {
-//   display: none;
-// }
+@media (min-width: $tablet-width) {
+.main-nav__tel,
+.main-nav {
+  display: none;
+}
 
-// .header-menu__item a {
-//   @include Raleway (600, 35px, 42px);
-// }
+.header-menu__item a {
+  @include Raleway (600, 35px, 42px);
+}
 
-// .header-menu__item {
-//   margin-bottom: 60px;
-// }
+.header-menu__item {
+  margin-bottom: 60px;
+}
 
-// .header-menu {
-//   text-align: center;
-//   margin: 0;
-//   padding: 0;
-//   padding-top: 60px;
-//   letter-spacing: 2px;
-//   margin-bottom: 110px;
-// }
+.header-menu {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 60px;
+  letter-spacing: 2px;
+  margin-bottom: 110px;
+}
 
-// }
+}

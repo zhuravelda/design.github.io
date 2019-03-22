@@ -24,4 +24,29 @@
   background-color: #fff;
 }
 
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: none;
+    padding-top: 165px;
+  }
+
+}
+
+
+@media (min-width: $desktop-width) {
+  .main-nav__tel {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 30px;
+    width: 50px;
+    background-color: red;
+  }
+
+}
+
+
+
+
 

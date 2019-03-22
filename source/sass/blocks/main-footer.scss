@@ -29,15 +29,35 @@
 }
 
 
-// @media (min-width: $tablet-width) {
-//   .main-footer__child-active {
-//     order: 0;
-//   }
+@media (min-width: $tablet-width) {
+  .main-footer__child-active {
+    order: 0;
+  }
 
-//   .main-footer__wrapper {
-//     flex-direction:row;
-//   }
+  .main-footer__wrapper {
+    flex-direction:row;
+    position: relative;
+  }
 
-// }
+  .main-footer {
+    padding-top: 75px;
+  }
+
+  .main-footer__box-text {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: -30px;
+  }
+
+  .main-footer__text {
+    margin: 0;
+    @include Raleway (500, 16px, 30px,  $main-footer__text);
+  }
+
+
+
+}
 
 

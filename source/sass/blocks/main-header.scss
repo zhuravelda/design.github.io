@@ -17,18 +17,22 @@
 
 
 
-// @media (min-width: $tablet-width) {
-//   .main-header {
-//     height: 947px;
-//     // padding-top: 0;
-//   }
+@media (min-width: $tablet-width) {
+  .main-header {
+    height: 947px;
+    // padding-top: 0;
+  }
 
-// }
+}
 
 
-// @media (min-width: $desktop-width) {
-//   .main-header {
-//     height: 605px;
-//   }
+@media (min-width: $desktop-width) {
+  .main-header {
+    height: 605px;
+    background-size: 1163px 595px;
+    background-position: center;
+    position: relative;
+    background-blend-mode: normal;
+  }
 
-// }
+}

@@ -18,9 +18,9 @@
 }
 
 .portfolio__projects {
-  padding-bottom: 140px;
+  padding-bottom: 130px;
   display: flex;
-  margin-bottom: 130px;
+  margin-bottom: 0px;
 }
 
 .portfolio__button--left,
@@ -28,11 +28,11 @@
   display: none;
 }
 
-// @media (min-width: $desktop-width) {
-//   .portfolio__projects {
-//     margin-bottom: 70px;
-//   }
+@media (min-width: $desktop-width) {
+  .portfolio__projects {
+    margin-bottom: 70px;
+  }
 
-// }
+}
 
 

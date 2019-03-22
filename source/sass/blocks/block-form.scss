@@ -77,24 +77,36 @@
 }
 
 
-// @media (min-width: $tablet-width) {
-//   .wrapper-form {
-//     width: 480px;
-//     margin: 0 auto;
-//   }
+@media (min-width: $tablet-width) {
+  .wrapper-form {
+    width: 475px;
+    margin: 0 auto;
+  }
 
-// }
+  .block-form__button {
+    width: 475px;
+  }
 
-// @media (min-width: $desktop-width) {
-//   .block-form .wrapper {
-//     width: 680px;
-//     margin-left: 0;
-//   }
+  .submit-description {
+    width: 475px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    @include Raleway (300, 18px, auto);
+  }
 
-//   .block-form {
-//     padding-bottom: 0;
-//   }
+}
 
-// }
+@media (min-width: $desktop-width) {
+  .block-form .wrapper {
+    width: 680px;
+    margin-left: 0;
+  }
+
+  .block-form {
+    padding-bottom: 0;
+  }
+
+}
 
 

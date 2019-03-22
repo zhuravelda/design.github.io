@@ -21,26 +21,26 @@
 }
 
 
-// @media (min-width: $tablet-width) {
-//   .portfolio__title {
-//     text-align: left;
-//   }
+@media (min-width: $tablet-width) {
+  .portfolio__title {
+    text-align: left;
+  }
 
-//   .portfolio__list {
-//     display: flex;
-//     justify-content: space-between;
-//   }
+  .portfolio__list {
+    display: flex;
+    justify-content: space-between;
+  }
 
-//   .portfolio__projects {
-//     min-height: 615px;
-//   }
+  .portfolio__projects {
+    min-height: 615px;
+  }
 
-// }
+}
 
-// @media (min-width: $desktop-width) {
-//   .portfolio__list {
-//     width:570px;
-//   }
+@media (min-width: $desktop-width) {
+  .portfolio__list {
+    width:570px;
+  }
 
-// }
+}
 

@@ -37,17 +37,33 @@
 }
 
 
-// @media (min-width: $tablet-width) {
-//   .blume-video {
-//     height: 810px;
-//   }
+@media (min-width: $tablet-width) {
+  .blume-video {
+    height: 810px;
+  }
 
-// }
+  .blume-video__button {
+    background-size: 193px 193px;
+    background-position-x: -17px;
+    background-position-y: 0;
+    width: 150px;
+    height: 150px;
+    top: -530px;
+  }
 
-// @media (min-width: $desktop-width) {
-//   .blume-video {
-//     height: 600px;
-//   }
+  .blume-video__text {
+    top: -495px;
+    width: 470px;
+    text-align: center;
+    margin: 0 auto;
+  }
 
-// }
+}
+
+@media (min-width: $desktop-width) {
+  .blume-video {
+    height: 600px;
+  }
+
+}
 

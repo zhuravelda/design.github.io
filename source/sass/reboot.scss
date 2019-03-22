@@ -52,29 +52,29 @@ img {
 }
 
 
-// @media (min-width: $tablet-width) {
-//   .wrapper {
-//     margin: 0 auto;
-//     padding-left: 37px;
-//     padding-right: 37px;
-//     max-width: 694px;
-//   }
+@media (min-width: $tablet-width) {
+  .wrapper {
+    margin: 0 auto;
+    padding-left: 37px;
+    padding-right: 37px;
+    max-width: 694px;
+  }
 
-//   .container {
-//     width: 768px;
-//   }
-// }
+  .container {
+    width: 768px;
+  }
+}
 
-// @media (min-width: $desktop-width) {
-//   .wrapper {
-//     margin: 0 auto;
-//     padding-left: 95px;
-//     padding-right: 95px;
-//     max-width: 1170px;
-//   }
+@media (min-width: $desktop-width) {
+  .wrapper {
+    margin: 0 auto;
+    padding-left: 95px;
+    padding-right: 95px;
+    max-width: 1170px;
+  }
 
-//   .container {
-//     width: 1360px;
-//   }
-// }
+  .container {
+    width: 1360px;
+  }
+}
 

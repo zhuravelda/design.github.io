@@ -20,18 +20,38 @@
   padding-bottom: 30px;
 }
 
-// @media (min-width: $tablet-width) {
-//   .reviews-box {
-//     width: 650px;
-//     height: 270px;
-//     position: relative;
-//     text-align: left;
-//   }
+@media (min-width: $tablet-width) {
+  .reviews-box {
+    margin-top: 0;
+    width: 650px;
+    // height: 270px;
+    position: relative;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 50px 169px 50px 70px;
+  }
 
-//   .reviews-box__img {
-//     position: absolute;
-//     right: -100px;
-//     top: 50px;
-//   }
+  .reviews-box__img {
+    position: absolute;
+    right: -103px;
+    top: 50px;
+  }
 
-// }
+  .reviews__title {
+    text-align: left;
+  }
+
+  .reviews-box__title {
+    margin-top: 0;
+  }
+
+  .reviews-box__title-service {
+    @include Raleway (700, 16px, auto, $reviews-box__title);
+  }
+
+  .reviews-box__text {
+    letter-spacing: 2px;
+    @include Raleway (300, 16px, 25px, $service-text);
+  }
+
+}
