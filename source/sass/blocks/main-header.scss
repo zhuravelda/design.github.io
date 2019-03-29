@@ -15,6 +15,21 @@
   padding-bottom: 165px;
 }
 
+.menu-button {
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 68px;
+  height: 24px;
+  background-color: #fff;
+}
+
+.main-nav__tel {
+  font-family: mullerultralight;
+  @include mullerultralight (400, 14px, auto);
+  display: none;
+}
+
 
 
 @media (min-width: $tablet-width) {
@@ -34,5 +49,37 @@
     position: relative;
     background-blend-mode: normal;
   }
+
+  .main-header__top {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 10;
+    width: 1170px;
+    top: 30px;
+  }
+
+  .menu-button {
+    position: static;
+  }
+
+  .main-nav__tel {
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+
+  .main-nav__tel::before {
+    content: "";
+    height: 15px;
+    width: 12px;
+    background-image: url(../../img/phone-receiver.png);
+    position: absolute;
+    background-size: 12px 15px;
+    left: 1010px;
+    top: 0px;
+    background-repeat: no-repeat;
+
+}
 
 }

@@ -39,13 +39,37 @@
 
 @media (min-width: $desktop-width) {
   .stage-item {
-    width: 33%;
+    width: 377px;
+    box-sizing: border-box;
+    padding-left: 100px;
+    margin-right: 19px;
+    margin-bottom: 20px;
+
   }
+
+  .stage-item:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .stage-item:nth-child(1) {
+    padding-left: 80px;
+  }
+
+  .stage-item:nth-child(4) {
+    padding-left: 80px;
+  }
+
   .stage-project__title {
     padding-top: 85px;
   }
+
   .stage-projeсt {
     padding-bottom: 65px;
+  }
+
+  .stage-list {
+    margin-top: 70px;
+    // justify-content: space-between;
   }
 
 }

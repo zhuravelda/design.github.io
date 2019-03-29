@@ -41,6 +41,10 @@
   background: $button-color;
 }
 
+.block-form__button:hover {
+  cursor: pointer;
+}
+
 .wrapper-form {
   border: none;
   margin: 0;
@@ -99,12 +103,58 @@
 
 @media (min-width: $desktop-width) {
   .block-form .wrapper {
-    width: 680px;
-    margin-left: 0;
+    margin: 0;
+    padding: 25px 100px 0;
   }
 
   .block-form {
+    padding-top: 0;
     padding-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    background-image: none;
+    min-height: 685px;
+  }
+
+  .block-form__wrapper {
+    width: 50%;
+    background-color: $base-color;
+  }
+
+  .block-form__side-picture {
+    width: 50%;
+    background-image: url(../../img/kitchen.jpg);
+    background-repeat: no-repeat;
+  }
+
+  .block-form__title {
+    text-align: left;
+    @include PlayfairDisplay (700, 40px, 54px);
+  }
+
+  .block-form__text {
+    @include Raleway (400, 14px, 24px);
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .form-item__wrapper {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .block-form__button {
+    @include Raleway (700, 15px, auto);
+    letter-spacing: 3px;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    background-color: rgba($color: #ffffff, $alpha: 0);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+
+  .submit-description {
+    @include Raleway (300, 14px, auto);
+    text-align: left;
   }
 
 }

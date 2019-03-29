@@ -55,9 +55,12 @@
     margin: 0;
     @include Raleway (500, 16px, 30px,  $main-footer__text);
   }
-
-
-
 }
 
-
+@media (min-width: $desktop-width) {
+  .main-footer {
+    padding-bottom: 0;
+    padding-top: 75px;
+    min-height: 180px;
+  }
+}

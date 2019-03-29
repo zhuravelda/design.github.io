@@ -25,12 +25,6 @@
   // display: none;
 }
 
-.main-nav__tel {
-  display: none;
-}
-
-
-
 .logo {
   position: absolute;
 }
@@ -45,7 +39,6 @@
 
 
 @media (min-width: $tablet-width) {
-.main-nav__tel,
 .main-nav {
   display: none;
 }

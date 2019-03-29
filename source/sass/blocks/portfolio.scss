@@ -6,6 +6,14 @@
   list-style: none;
   padding-left: 0;
   padding-bottom: 1px;
+
+  &--item {
+    text-decoration: none;
+    @include Raleway (400, 22px, auto, $menu-items);
+  }
+  &--active {
+    @include Raleway (600, 22px, auto, $title-blocks);
+  }
 }
 
 .portfolio__title {
@@ -16,8 +24,26 @@
   margin-bottom: 25px;
 }
 
-.portfolio__list--item {
-  text-decoration: none;
+.portfolio__projects {
+  background-color: $background-portfolio;
+}
+
+.projects-item__title {
+  @include Raleway (600, 18px, auto, $main-text-color);
+  &--active {
+    @include Raleway (600, 18px, auto, $title-blocks);
+  }
+}
+
+.portfolio__projects {
+  padding-bottom: 130px;
+  display: flex;
+  margin-bottom: 0px;
+}
+
+.portfolio__button--left,
+.portfolio__button--right {
+  display: none;
 }
 
 
@@ -38,8 +64,28 @@
 }
 
 @media (min-width: $desktop-width) {
+
+  .portfolio__projects {
+    margin-bottom: 0px;
+    padding: 0 95px;
+  }
+
   .portfolio__list {
-    width:570px;
+    width: 570px;
+
+    &--item {
+      @include Raleway (400, 18px, auto, $menu-items);
+    }
+    &--active {
+      display: inline-block;
+      border-bottom: 1px solid $title-blocks;
+      padding-bottom: 10px;
+      @include Raleway (600, 18px, auto, $title-blocks);
+    }
+  }
+
+  .portfolio__title {
+    margin-bottom: 60px;
   }
 
 }

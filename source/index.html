@@ -14,8 +14,17 @@
   <div class="container">
   <header class="main-header">
     <div class="wrapper">
-    <a href="#" class="logo header-logo"><img src="img/logo1.png" class="logo_img" alt="Логотип дизайн-студии BRUME"></a>
-    <a href="#" class="logo header-logo-desktop"><img src="img/logo.png" class="logo_img-desktop" alt="Логотип дизайн-студии BRUME"></a>
+    <div class="main-header__top">
+      <div class="menu-button">
+        <button class="menu-button__open" type="button"></button>
+        <button class="menu-button__close" type="button"></button>
+      </div>
+      <div class="main-header__logo">
+          <a href="#" class="logo header-logo"><img src="img/logo1.png" class="logo_img" alt="Логотип дизайн-студии BRUME"></a>
+          <a href="#" class="logo header-logo-desktop"><img src="img/logo.png" class="logo_img-desktop" alt="Логотип дизайн-студии BRUME"></a>
+      </div>
+      <a class="main-nav__tel" href="tel:+7(800)8234888">+7 (800) 823  48 88</a>
+    </div>
     <nav class="main-nav">
       <ul class="header-menu">
         <li class="header-menu__item"><a href="#">Главная</a></li>
@@ -25,16 +34,6 @@
         <li class="header-menu__item"><a href="#">Отзывы</a></li>
         <li class="header-menu__item"><a href="#">Контакты</a></li>
       </ul>
-      <ul class="nav-social">
-        <li class="social__item--menu social__header-item--vkontakte"></li>
-        <li class="social__item--menu social__header-item--instagram"></li>
-        <li class="social__item--menu social__header-item--facebook"></li>
-      </ul>
-      <div class="menu-button">
-        <button class="menu-button__open" type="button"></button>
-        <button class="menu-button__close" type="button"></button>
-      </div>
-      <a class="main-nav__tel" href="tel:+7(800)8234888">+7 (800) 823  48 88</a>
     </nav>
     <div class="main-header__left-block">
       <h1 class="main-header__title">Дизайн интерьеров</h1>
@@ -42,6 +41,11 @@
       <a class="main-header__button" href="#">ЗАКАЗАТЬ ДИЗАЙН</a>
       <div class="arrow"></div>
     </div>
+    <ul class="nav-social">
+      <li class="social__item--menu social__header-item--vkontakte"></li>
+      <li class="social__item--menu social__header-item--instagram"></li>
+      <li class="social__item--menu social__header-item--facebook"></li>
+    </ul>
   </div>
 
   </header>
@@ -259,6 +263,23 @@
     </div>
   </footer>
 </div>
+
+<script>
+var link = document.querySelector(".menu-button__open");
+var oupenmenu = document.querySelector(".main-nav");
+var closemenu = document.querySelector(".menu-button__close");
+
+link.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  oupenmenu.classList.add("menu-show");
+});
+
+closemenu.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  oupenmenu.classList.remove("menu-show");
+});
+</script>
+
 </body>
 
 </html>

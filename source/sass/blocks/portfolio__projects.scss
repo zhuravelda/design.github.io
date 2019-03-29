@@ -1,38 +1,3 @@
-.portfolio__projects {
-  background-color: $background-portfolio;
-}
 
-.portfolio__list--item {
-  @include Raleway (400, 22px, auto, $menu-items);
-}
-
-.portfolio__list--active {
-  @include Raleway (600, 22px, auto, $title-blocks);
-}
-
-.projects-item__title {
-  @include Raleway (600, 18px, auto, $main-text-color);
-  &--active {
-    @include Raleway (600, 18px, auto, $title-blocks);
-  }
-}
-
-.portfolio__projects {
-  padding-bottom: 130px;
-  display: flex;
-  margin-bottom: 0px;
-}
-
-.portfolio__button--left,
-.portfolio__button--right {
-  display: none;
-}
-
-@media (min-width: $desktop-width) {
-  .portfolio__projects {
-    margin-bottom: 70px;
-  }
-
-}
 
 

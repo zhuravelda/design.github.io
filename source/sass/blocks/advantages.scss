@@ -90,4 +90,33 @@
     flex-wrap: nowrap;
   }
 
+  .advantages {
+    padding-top: 60px;
+    padding-bottom: 0px;
+  }
+
+  .advantages-list__item:nth-child(2n) {
+    margin-top: 210px;
+  }
+
+  .advantages-list__item:nth-child(3) {
+    margin-top: 0;
+  }
+
+  .advantages-list__item {
+    width: 290px;
+    box-sizing: border-box;
+    padding-right: 37px;
+    padding-top: 0;
+
+    &--title {
+      letter-spacing: 0;
+      @include Raleway (600, 22px, auto, $title-color);
+    }
+    &--text {
+      letter-spacing: 1px;
+      @include Raleway (300, 16px, 25px, $advantages-text);
+    }
+  }
+
 }

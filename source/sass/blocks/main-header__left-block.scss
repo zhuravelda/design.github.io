@@ -72,8 +72,7 @@
     background-color: $button-color;
   }
 
-  .main-header__left-block,
-  .main-nav__tel {
+  .main-header__left-block {
     display: block;
   }
 
@@ -101,6 +100,7 @@
   }
 
   .main-header__left-block {
+    // display: none;
     width: 50%;
     height: 100%;
     position: absolute;
@@ -128,11 +128,5 @@
     display: none;
   }
 
-  .main-nav__tel {
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
 
 }
