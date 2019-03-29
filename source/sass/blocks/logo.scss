@@ -5,7 +5,40 @@
 
 }
 
+.header-logo-desktop {
+  display: none;
+
+}
+
 .logo_img {
   height: 23px;
   width: 37px;
+}
+
+@media (min-width: $tablet-width) {
+  .header-logo {
+    top: 60px;
+    left: 37px;
+
+  }
+
+  .logo_img {
+    height: 50px;
+    width: 85px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .header-logo-desktop {
+    top: -7px;
+    left: 554px;
+    display: block;
+    z-index: 10;
+  }
+
+  .header-logo {
+    display: none;
+  }
+
 }

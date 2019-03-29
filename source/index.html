@@ -14,7 +14,17 @@
   <div class="container">
   <header class="main-header">
     <div class="wrapper">
-    <a href="#" class="logo header-logo"><img src="img/logo1.png" class="logo_img" width="37" height="23" alt="Логотип дизайн-студии BRUME"></a>
+    <div class="main-header__top">
+      <div class="menu-button">
+        <button class="menu-button__open" type="button"></button>
+        <button class="menu-button__close" type="button"></button>
+      </div>
+      <div class="main-header__logo">
+          <a href="#" class="logo header-logo"><img src="img/logo1.png" class="logo_img" alt="Логотип дизайн-студии BRUME"></a>
+          <a href="#" class="logo header-logo-desktop"><img src="img/logo.png" class="logo_img-desktop" alt="Логотип дизайн-студии BRUME"></a>
+      </div>
+      <a class="main-nav__tel" href="tel:+7(800)8234888">+7 (800) 823  48 88</a>
+    </div>
     <nav class="main-nav">
       <ul class="header-menu">
         <li class="header-menu__item"><a href="#">Главная</a></li>
@@ -24,16 +34,6 @@
         <li class="header-menu__item"><a href="#">Отзывы</a></li>
         <li class="header-menu__item"><a href="#">Контакты</a></li>
       </ul>
-      <ul class="social">
-        <li class="social__item--menu social__header-item--vkontakte"></li>
-        <li class="social__item--menu social__header-item--instagram"></li>
-        <li class="social__item--menu social__header-item--facebook"></li>
-      </ul>
-      <div class="menu-button">
-        <button class="menu-button__open" type="button"></button>
-        <button class="menu-button__close" type="button"></button>
-      </div>
-      <a class="main-nav__tel" href="tel:+7(800)8234888">+7 (800) 823  48 88</a>
     </nav>
     <div class="main-header__left-block">
       <h1 class="main-header__title">Дизайн интерьеров</h1>
@@ -41,6 +41,11 @@
       <a class="main-header__button" href="#">ЗАКАЗАТЬ ДИЗАЙН</a>
       <div class="arrow"></div>
     </div>
+    <ul class="nav-social">
+      <li class="social__item--menu social__header-item--vkontakte"></li>
+      <li class="social__item--menu social__header-item--instagram"></li>
+      <li class="social__item--menu social__header-item--facebook"></li>
+    </ul>
   </div>
 
   </header>
@@ -178,7 +183,7 @@
       </div>
     </section>
     <section class="block-form">
-      <form>
+      <form class="block-form__wrapper">
         <div class="wrapper">
         <p class="block-form__title">Мечтаете об интерьере от BRUME?</p>
         <fieldset class="wrapper-form">
@@ -197,7 +202,7 @@
           </p>
         </fieldset>
         <input class="block-form__button" type="submit" value="Отправить">
-        <p class="submit-description">Нажимая на кнопку, вы<br>соглашаетесь с условиями<br>обработки персональных данных</p>
+        <p class="submit-description">Нажимая на кнопку, вы соглашаетесь с условиями обработки персональных данных</p>
         </div>
       </form>
       <div class="block-form__side-picture"></div>
@@ -245,17 +250,36 @@
     <div class="wrapper">
     <img src="img/logo1.png" class="main-footer__logo-img" width="40" height="70" alt="Логотип дизайн-студии BRUME">
     <div class="main-footer__wrapper">
-    <p class="main-footer__text">BRUME interior, 2017</p>
     <ul class="social main-footer__child-active">
-      <li class="social__item social__item--vkontakte"></li>
-      <li class="social__item social__item--instagram"></li>
-      <li class="social__item social__item--facebook"></li>
+      <li class="social__item social__item--vkontakte"><a href="#"></a></li>
+      <li class="social__item social__item--instagram"><a href="#"></a></li>
+      <li class="social__item social__item--facebook"><a href="#"></a></li>
     </ul>
-    <p class="main-footer__text">HolodnayaDesign</p>
+    <div class="main-footer__box-text">
+      <p class="main-footer__text">BRUME interior, 2017</p>
+      <p class="main-footer__text">HolodnayaDesign</p>
+    </div>
     </div>
     </div>
   </footer>
 </div>
+
+<script>
+var link = document.querySelector(".menu-button__open");
+var oupenmenu = document.querySelector(".main-nav");
+var closemenu = document.querySelector(".menu-button__close");
+
+link.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  oupenmenu.classList.add("menu-show");
+});
+
+closemenu.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  oupenmenu.classList.remove("menu-show");
+});
+</script>
+
 </body>
 
 </html>

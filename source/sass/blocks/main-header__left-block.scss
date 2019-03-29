@@ -2,11 +2,13 @@
   font-family: 'Playfair Display', Times, serif;
   @include PlayfairDisplay (700, 48px, 48px);
   margin-top: 0;
+  letter-spacing: 1px;
 }
 
 .main-header__text {
   margin-bottom: 30px;
   @include mullerultralight (300, 18px, auto);
+  letter-spacing: 1px;
 }
 
 .main-header__button {
@@ -18,6 +20,7 @@
   width: 223px;
   text-align: center;
   background-color: $button-color;
+  letter-spacing: 1px;
 }
 
 .main-header__title,
@@ -28,7 +31,6 @@
 .arrow {
   height: 58px;
   width: 14px;
-  // background-color: red;
   margin: 0 auto;
   margin-top: 30px;
   background-image: url(../../img/Arrow-OutRight-icon.png);
@@ -37,53 +39,94 @@
 }
 
 .main-header__left-block {
-  // background-color: #112537;
-  // opacity: 0.88;
+  padding-top: 165px;
+  // display: none;
 }
 
 
 
-// @media (min-width: $tablet-width) {
-//   .main-header__title {
-//     @include PlayfairDisplay (700, 100px, 100px);
-//     margin-top: 130px;
-//     letter-spacing: 2px;
-//   }
-
-//   .main-header__text {
-//     margin-bottom: 60px;
-//     @include mullerultralight (300, 26px, auto);
-//     letter-spacing: 2px;
-//   }
-
-//   .main-header__button {
-//     @include Raleway (700, 30px, auto);
-//     letter-spacing: 3px;
-//     text-decoration: none;
-//     margin: 0 auto;
-//     display: block;
-//     padding: 40px 0;
-//     width: 440px;
-//     text-align: center;
-//     background-color: $button-color;
-//   }
-
-//   .main-header__left-block,
-//   .main-nav__tel {
-//     display: block;
-//   }
-
-// }
 
 
-// @media (min-width: $desktop-width) {
-//   .main-header__title,
-//   .main-header__text {
-//     text-align: left;
-//   }
+@media (min-width: $tablet-width) {
+  .main-header__title {
+    @include PlayfairDisplay (700, 100px, 100px);
+    margin-top: 130px;
+    letter-spacing: 2px;
+  }
 
-//   .main-header__button {
-//     margin-left: 0;
-//   }
+  .main-header__text {
+    margin-bottom: 60px;
+    @include mullerultralight (300, 26px, auto);
+    letter-spacing: 2px;
+  }
 
-// }
+  .main-header__button {
+    @include Raleway (700, 30px, auto);
+    letter-spacing: 3px;
+    text-decoration: none;
+    margin: 0 auto;
+    display: block;
+    padding: 40px 0;
+    width: 440px;
+    text-align: center;
+    background-color: $button-color;
+  }
+
+  .main-header__left-block {
+    display: block;
+  }
+
+  .arrow {
+    height: 82px;
+    width: 20px;
+    margin-top: 105px;
+    background-size: 20px 82px;
+  }
+
+}
+
+
+@media (min-width: $desktop-width) {
+  .main-header__title,
+  .main-header__text {
+    text-align: left;
+  }
+
+  .main-header__button {
+    margin-left: 0;
+    @include Raleway (700, 14px, auto);
+    width: 277px;
+    padding: 20px 0;
+  }
+
+  .main-header__left-block {
+    // display: none;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    box-sizing: border-box;
+    padding-left: 190px;
+    padding-top: 120px;
+    background-color: rgba($color: $header-color, $alpha: 0.88);
+  }
+
+  .main-header__title {
+    @include PlayfairDisplay (700, 60px, 60px);
+    margin-bottom: 30px;
+  }
+
+  .main-header__text {
+    @include mullerultralight (300, 14px, 20px);
+    width: 390px;
+    letter-spacing: 1px;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+
+}

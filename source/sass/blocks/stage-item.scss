@@ -1,5 +1,10 @@
+.stage-item__text {
+  @include Raleway (300, 18px, 25px, $service-text);
+}
+
 .stage-item__title {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
+  @include Raleway (600, 22px, 18px, $stage-title);
 }
 
 .stage-item {
@@ -15,6 +20,20 @@
   }
 }
 
-.stage-item__text {
-  font-size: 20px;
+@media (min-width: $tablet-width) {
+  .stage-item {
+    box-sizing: border-box;
+    padding-left: 80px;
+  }
+
+  .stage-item__title {
+    margin-top: 10px;
+  }
+
+  .stage-item__text {
+    @include Raleway (300, 16px, 25px, $service-text);
+  }
+
+
 }
+

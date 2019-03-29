@@ -4,6 +4,8 @@
 //   height: 595px;
 // }
 .main-header {
+  background-blend-mode: multiply;
+  background-color: rgba($color: $header-color, $alpha: 0.88);
   height: 100%;
   background-image: url(../../img/header-background-m.jpg);
   background-repeat: no-repeat;
@@ -13,27 +15,71 @@
   padding-bottom: 165px;
 }
 
-.main-header .wrapper {
-  background-color: #112537;
-  opacity: 0.88;
-  height: 100%;
-  padding-top: 165px;
+.menu-button {
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 68px;
+  height: 24px;
+  background-color: #fff;
+}
+
+.main-nav__tel {
+  font-family: mullerultralight;
+  @include mullerultralight (400, 14px, auto);
+  display: none;
 }
 
 
 
-// @media (min-width: $tablet-width) {
-//   .main-header {
-//     height: 947px;
-//     // padding-top: 0;
-//   }
+@media (min-width: $tablet-width) {
+  .main-header {
+    height: 947px;
+    // padding-top: 0;
+  }
 
-// }
+}
 
 
-// @media (min-width: $desktop-width) {
-//   .main-header {
-//     height: 605px;
-//   }
+@media (min-width: $desktop-width) {
+  .main-header {
+    height: 605px;
+    background-size: 1163px 595px;
+    background-position: center;
+    position: relative;
+    background-blend-mode: normal;
+  }
 
-// }
+  .main-header__top {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 10;
+    width: 1170px;
+    top: 30px;
+  }
+
+  .menu-button {
+    position: static;
+  }
+
+  .main-nav__tel {
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+
+  .main-nav__tel::before {
+    content: "";
+    height: 15px;
+    width: 12px;
+    background-image: url(../../img/phone-receiver.png);
+    position: absolute;
+    background-size: 12px 15px;
+    left: 1010px;
+    top: 0px;
+    background-repeat: no-repeat;
+
+}
+
+}

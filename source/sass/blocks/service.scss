@@ -51,91 +51,151 @@
   margin-bottom: 33px;
 }
 
-// @media (min-width: $tablet-width) {
-//   .service {
-//     padding-top: 80px;
-//   }
+@media (min-width: $tablet-width) {
+  .service {
+    padding-top: 80px;
+  }
 
-//   .service__list {
-//     display: flex;
-//     align-items: flex-start;
-//     flex-wrap: wrap;
-//     height: 100%;
-//     margin-bottom: 0;
-//     padding-bottom: 0;
-//   }
+  .service__list {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
 
-//   .service__list li {
-//     width: 50%;
-//     padding-bottom: 45px;
-//   }
+  .service__list li {
+    width: 50%;
+    padding-bottom: 45px;
+  }
 
-//   .service__block-description {
-//     padding-bottom: 100px;
+  .service__block-description {
+    position: relative;
+    padding-bottom: 100px;
+    padding-top: 30px;
+    width: 500px;
 
-//     &--title {
-//       display: block;
-//     }
-//     &--button {
-//       margin-left: 0;
-//     }
-//   }
+    &--text {
+      margin-bottom: 30px;
+      @include Raleway (300, 18px, 30px, $service-text);
+    }
 
-// }
+    &--title {
+      display: block;
+      margin-bottom: 0;
+    }
+
+    &--button {
+      margin-left: 0;
+      width: 340px;
+      padding: 21px 0;
+      @include Raleway (800, 18px, auto, $title-blocks);
+    }
+
+    &--number {
+      display: block;
+      position: absolute;
+      top: 40px;
+      right: -197px;
+      letter-spacing: 1px;
+      @include Raleway (400, 22px, 30px, $title-blocks);
+    }
+
+  }
+
+}
 
 
-// @media (min-width: $desktop-width) {
-//   .service {
-//     padding-top: 0;
-//     position: relative;
-//     display: flex;
-//   }
+@media (min-width: $desktop-width) {
+  .service {
+    padding-top: 0;
+    position: relative;
+    display: flex;
+  }
 
-//   .service__list {
-//     flex-direction: column;
-//   }
+  .service__title {
+    padding-left: 0;
+  }
 
-//   .service__list li {
-//     width: 100%;
-//     padding-bottom: 0;
-//   }
+  .service__list li {
+    width: 180px;
+    padding-bottom: 0;
+    margin-bottom: 75px;
+  }
 
-//   .service__block-description--wrapper .wrapper {
-//     padding: 0;
-//   }
+  .service__list {
+    flex-direction: column;
+    width: auto;
+    margin-top: 80px;
+    padding-left: 0;
 
-//   .service__block-description--text {
-//     width: 500px;
-//   }
+    &--item {
+      @include Raleway (300, 18px, auto, $menu-items);
+    }
 
-//   .service__block-description--wrapper {
-//     width: 890px;
-//     margin-right: 95px;
-//   }
+    &--active {
+      width: 260px;
+      display: inline-block;
+      margin-left: 30px;
+      @include Raleway (600, 18px, auto, $title-blocks);
+    }
+  }
 
-//   .service .wrapper {
-//     padding-right: 0px;
-//   }
 
-//   .service__block-description {
-//     position: relative;
-//   }
+  .service__block-description--wrapper .wrapper {
+    padding: 0;
+  }
 
-//   .service__block-description--number {
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     display: block;
-//   }
+  .service__block-description--text {
+    width: 500px;
+  }
 
-//   .service__block-description--button {
-//     position: absolute;
-//     right: 0;
-//     bottom: 0;
-//   }
+  .service__block-description--wrapper {
+    width: 877px;
+    margin-right: 95px;
+  }
 
-//   .service {
-//     padding-bottom: 80px;
-//   }
+  .service .wrapper {
+    padding-right: 0px;
+  }
 
-// }
+  .service__block-description {
+    position: relative;
+    padding-top: 15px;
+    width: 100%;
+
+    &--wrapper {
+      margin-top: 130px;
+    }
+
+  }
+
+  .service__block-description--number {
+    position: absolute;
+    top: 30px;;
+    right: 1px;
+    display: block;
+    @include Raleway (400, 18px, 30px, $title-blocks);
+  }
+
+  .service__block-description--button {
+    position: absolute;
+    right: 0;
+    top: 145px;
+    width: 215px;
+    padding: 18px 0;
+    @include Raleway (800, 15px, auto, $title-blocks);
+  }
+
+  .service {
+    padding-bottom: 0;
+  }
+
+  .service__title {
+    margin-top: 5px;
+  }
+
+
+
+}

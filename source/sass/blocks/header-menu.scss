@@ -3,15 +3,26 @@
   text-transform: uppercase;
   @include Raleway (600, 20px, 42px);
   font-family: 'Raleway', Arial, sans-serif;
+  letter-spacing: 2px;
+}
+
+.header-menu__item {
+  margin-bottom: 20px;
+}
+
+.header-menu {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
 }
 
 .header-menu__item--active a {
   color: $menu-item-active;
 }
 
-.main-nav__tel,
 .main-nav {
-  display: none;
+  // display: none;
 }
 
 .logo {
@@ -27,27 +38,26 @@
 }
 
 
-// @media (min-width: $tablet-width) {
-// .main-nav__tel,
-// .main-nav {
-//   display: none;
-// }
+@media (min-width: $tablet-width) {
+.main-nav {
+  display: none;
+}
 
-// .header-menu__item a {
-//   @include Raleway (600, 35px, 42px);
-// }
+.header-menu__item a {
+  @include Raleway (600, 35px, 42px);
+}
 
-// .header-menu__item {
-//   margin-bottom: 60px;
-// }
+.header-menu__item {
+  margin-bottom: 60px;
+}
 
-// .header-menu {
-//   text-align: center;
-//   margin: 0;
-//   padding: 0;
-//   padding-top: 60px;
-//   letter-spacing: 2px;
-//   margin-bottom: 110px;
-// }
+.header-menu {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 60px;
+  letter-spacing: 2px;
+  margin-bottom: 110px;
+}
 
-// }
+}

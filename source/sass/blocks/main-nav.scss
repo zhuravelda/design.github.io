@@ -1,10 +1,40 @@
-.main-nav__tel {
-  font-family: mullerultralight;
-  @include mullerultralight (400, 14, auto);
+.main-nav {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: $header-color;
+  padding-top: 110px;
+  box-sizing: border-box;
+  display: none;
 }
 
-.main-nav {
-  position: relative;
+.menu-show {
+  display: block
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: none;
+    padding-top: 165px;
+  }
+
+  .menu-show {
+    display: block
+  }
+
+}
+
+
+@media (min-width: $desktop-width) {
+  .menu-show {
+    display: block
+  }
+
+}
+
+
+
 
 
