@@ -355,6 +355,8 @@ img {
     padding-left: 37px;
     padding-right: 37px;
     max-width: 694px; }
+  .reviews-wrapper {
+    width: 100%; }
   .container {
     width: 768px; } }
 
@@ -780,11 +782,44 @@ img {
   background-color: #112537;
   padding-top: 110px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: none; }
+          box-sizing: border-box; }
 
 .menu-show {
   display: block; }
+
+.wrapper-toggle {
+  width: 100%;
+  height: 43px;
+  background-color: #7c7c7c; }
+
+.toggle {
+  width: 10%;
+  display: block;
+  position: absolute;
+  right: 30px; }
+
+.toggle .line {
+  width: 30px;
+  height: 3px;
+  background-color: #cecece;
+  display: block;
+  margin: 8px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.toggle:hover {
+  cursor: pointer; }
+
+.toggle.is-active .line:nth-child(2) {
+  opacity: 0; }
+
+.toggle.is-active .line:nth-child(1) {
+  -webkit-transform: translateY(9px) rotate(45deg);
+  transform: translateY(9px) rotate(45deg); }
+
+.toggle.is-active .line:nth-child(3) {
+  -webkit-transform: translateY(-13px) rotate(-45deg);
+  transform: translateY(-13px) rotate(-45deg); }
 
 @media (min-width: 768px) {
   .main-nav {
@@ -891,25 +926,23 @@ img {
   margin-bottom: 80px; }
 
 .reviews-box {
-  display: none;
+  display: block;
   position: relative; }
 
 .reviews-client {
   list-style: none;
   padding-left: 0; }
 
-.reviews-box--active {
-  display: block; }
-
-.reviews-box__img {
-  width: 245px;
-  height: 220px;
-  position: relative;
-  top: -40px; }
+.reviews-wrapper {
+  padding: 0 15px; }
 
 @media (min-width: 768px) {
   .reviews {
-    padding-bottom: 150px; } }
+    padding-bottom: 150px; }
+  .reviews-wrapper {
+    width: 100%;
+    margin-left: 36px;
+    padding: 0; } }
 
 @media (min-width: 1200px) {
   .reviews__title {
@@ -943,22 +976,33 @@ img {
   color: #5e5e5e; }
 
 .reviews-box {
+  background-color: #ffffff;
+  display: block;
   text-align: center;
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  margin-top: 40px; }
+
+.reviews-box__img {
+  position: relative;
+  top: -40px;
+  margin: 0 auto; }
 
 @media (min-width: 768px) {
   .reviews-box {
     margin-top: 0;
+    margin-right: 190px;
     width: 650px;
+    height: 309px;
     position: relative;
     text-align: left;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    padding: 50px 169px 50px 70px; }
-  .reviews-box__img {
+    padding: 50px 170px 50px 70px; }
+  .slick-active .reviews-box__img {
     position: absolute;
-    right: -103px;
-    top: 50px; }
+    right: -155px;
+    top: 50px;
+    display: block; }
   .reviews__title {
     text-align: left; }
   .reviews-box__title {
@@ -969,11 +1013,25 @@ img {
     line-height: auto;
     color: #efb172; }
   .reviews-box__text {
+    width: 460px;
     letter-spacing: 2px;
     font-weight: 300;
     font-size: 16px;
     line-height: 25px;
     color: #5e5e5e; } }
+
+@media (min-width: 1200px) {
+  .reviews-box {
+    margin-right: 133px; }
+  .slick-active .reviews-box__img {
+    right: -133px; }
+  .reviews-box__img {
+    position: absolute; }
+  .reviews-box__text,
+  .reviews-box__title-service,
+  .reviews-box__title {
+    width: 435px;
+    margin-right: 0; } }
 
 .reviews-button {
   display: -webkit-box;
@@ -1008,6 +1066,40 @@ img {
 
 .reviews-client {
   margin-bottom: 40px; }
+
+.slick-dots li {
+  margin: 0 8px;
+  margin-top: 10px; }
+
+.slick-dots li button {
+  width: 26px;
+  height: 3px;
+  padding: 3px;
+  margin-right: 10px;
+  background-color: #cdd3cf; }
+
+.slick-dots li.slick-active button,
+.slick-dots li button:hover {
+  background-color: #1a444a; }
+
+.slick-dots li button:before {
+  content: ""; }
+
+.slick-list {
+  margin-bottom: 25px; }
+
+@media (min-width: 768px) {
+  .reviews-client {
+    width: 100%; }
+  .reviews .wrapper {
+    padding: 0;
+    margin: 0; } }
+
+@media (min-width: 1200px) {
+  .reviews-client {
+    width: 840px;
+    margin: 0 auto;
+    padding-right: 45px; } }
 
 .social,
 .nav-social {

@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>design</title>
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&amp;subset=cyrillic" rel="stylesheet">
@@ -15,10 +17,6 @@
   <header class="main-header">
     <div class="wrapper">
     <div class="main-header__top">
-      <div class="menu-button">
-        <button class="menu-button__open" type="button"></button>
-        <button class="menu-button__close" type="button"></button>
-      </div>
       <div class="main-header__logo">
           <a href="#" class="logo header-logo"><img src="img/logo1.png" class="logo_img" alt="Логотип дизайн-студии BRUME"></a>
           <a href="#" class="logo header-logo-desktop"><img src="img/logo.png" class="logo_img-desktop" alt="Логотип дизайн-студии BRUME"></a>
@@ -26,6 +24,13 @@
       <a class="main-nav__tel" href="tel:+7(800)8234888">+7 (800) 823  48 88</a>
     </div>
     <nav class="main-nav">
+      <div class="wrapper-toggle">
+        <div class="toggle">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+      </div>
       <ul class="header-menu">
         <li class="header-menu__item"><a href="#">Главная</a></li>
         <li class="header-menu__item header-menu__item--active"><a href="#">Преимущества</a></li>
@@ -208,39 +213,27 @@
       <div class="block-form__side-picture"></div>
     </section>
     <section class="reviews">
-      <div class="wrapper">
+      <div class="reviews-wrapper">
       <h2 class="reviews__title">Отзывы наших клиентов</h2>
       <ul class="reviews-client">
         <li class="reviews-box">
-          <h3 class="reviews-box__title"></h3>
-          <p class="reviews-box__title-service"></p>
-          <p class="reviews-box__text"></p>
-          <img class="reviews-box__img" width="200" height="190" src="img/HIPSTER.jpg" alt="">
+          <img class="reviews-box__img" src="img/HIPSTER.jpg" alt="">
+          <h3 class="reviews-box__title">Игорь Горбунов</h3>
+          <p class="reviews-box__title-service">Услуга: инерьер детской</p>
+          <p class="reviews-box__text">Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и легко, команда выполнила все точно в срок, сделали все как  мы и хотели. В следующий раз обратимся к BRUME!</p>
         </li>
-        <li class="reviews-box reviews-box--active">
-          <img class="reviews-box__img"  src="img/girl.png" alt="">
+        <li class="reviews-box">
+          <img class="reviews-box__img"  src="img/girl.jpg" alt="">
           <h3 class="reviews-box__title">Александра Холодная</h3>
           <p class="reviews-box__title-service">Услуга: инерьер детской</p>
           <p class="reviews-box__text">Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и легко, команда выполнила все точно в срок, сделали все как  мы и хотели. В следующий раз обратимся к BRUME!</p>
         </li>
         <li class="reviews-box">
-          <h3 class="reviews-box__title"></h3>
-          <p class="reviews-box__title-service"></p>
-          <p class="reviews-box__text"></p>
-          <img class="reviews-box__img" width="200" height="190" src="img/girl2.jpg" alt="">
+          <img class="reviews-box__img" src="img/girl2.jpg" alt="">
+          <h3 class="reviews-box__title">Ирина Бережная</h3>
+          <p class="reviews-box__title-service">Услуга: инерьер детской</p>
+          <p class="reviews-box__text">Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и легко, команда выполнила все точно в срок, сделали все как  мы и хотели. В следующий раз обратимся к BRUME!</p>
         </li>
-        <li class="reviews-box">
-          <h3 class="reviews-box__title"></h3>
-          <p class="reviews-box__title-service"></p>
-          <p class="reviews-box__text"></p>
-          <img class="reviews-box__img" width="200" height="190" src="#" alt="">
-        </li>
-      </ul>
-      <ul class="reviews-button">
-        <li class="reviews-button__item"></li>
-        <li class="reviews-button__item"></li>
-        <li class="reviews-button__item"></li>
-        <li class="reviews-button__item"></li>
       </ul>
       </div>
     </section>
@@ -264,7 +257,12 @@
   </footer>
 </div>
 
-<script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+<!-- <script>
 var link = document.querySelector(".menu-button__open");
 var oupenmenu = document.querySelector(".main-nav");
 var closemenu = document.querySelector(".menu-button__close");
@@ -278,7 +276,7 @@ closemenu.addEventListener("click", function (evt) {
   evt.preventDefault();
   oupenmenu.classList.remove("menu-show");
 });
-</script>
+</script> -->
 
 </body>
 

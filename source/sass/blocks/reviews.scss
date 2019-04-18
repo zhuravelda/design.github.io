@@ -9,7 +9,7 @@
 }
 
 .reviews-box {
-  display: none;
+  display: block;
   position: relative;
 }
 
@@ -18,21 +18,26 @@
   padding-left: 0;
 }
 
-.reviews-box--active {
-  display: block;
+.reviews-wrapper {
+  padding: 0 15px;
 }
 
-.reviews-box__img {
-  width: 245px;
-  height: 220px;
-  position: relative;
-  top: -40px;
-}
+// .reviews-box--active {
+//   display: block;
+// }
+
+
 
 
 @media (min-width: $tablet-width) {
   .reviews {
     padding-bottom: 150px;
+  }
+
+  .reviews-wrapper {
+    width: 100%;
+    margin-left: 36px;
+    padding: 0;
   }
 
 }
