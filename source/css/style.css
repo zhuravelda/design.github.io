@@ -662,9 +662,8 @@ img {
   background-blend-mode: multiply;
   background-color: rgba(17, 37, 55, 0.88);
   height: 100%;
-  background-image: url(../../img/header-background-m.jpg);
+  background-image: url(../../img/menu-desk4.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
   height: 443px;
   position: relative;
   padding-bottom: 165px; }
@@ -685,6 +684,9 @@ img {
   color: white;
   display: none; }
 
+.header-slider {
+  display: none; }
+
 @media (min-width: 768px) {
   .main-header {
     height: 947px; } }
@@ -692,6 +694,7 @@ img {
 @media (min-width: 1200px) {
   .main-header {
     height: 605px;
+    background-image: none;
     background-size: 1163px 595px;
     background-position: center;
     position: relative;
@@ -722,7 +725,42 @@ img {
     background-size: 12px 15px;
     left: 1010px;
     top: 0px;
-    background-repeat: no-repeat; } }
+    background-repeat: no-repeat; }
+  .header-slider {
+    display: block;
+    position: absolute;
+    top: 90px;
+    left: 100px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 595px;
+    width: 1163px; }
+  .slick-dots {
+    bottom: -55px;
+    right: -510px; }
+  .slider {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 1166px;
+    height: 550px;
+    margin: 0 auto; }
+  .slider-item {
+    height: 550px; }
+  .slider-item:hover {
+    cursor: pointer;
+    width: 120%; }
+  .slider-item1 {
+    background-color: red; }
+  .slider-item2 {
+    background-color: #4d1717; }
+  .slider-item3 {
+    background-color: #f5a7a7; }
+  .slider-item4 {
+    background-color: #1f0a0a; }
+  .slider-item5 {
+    background-color: #462d2d; } }
 
 .header-menu__item a {
   opacity: 0.93;
