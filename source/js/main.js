@@ -7,6 +7,7 @@ $('.reviews-client').slick({
   slidesToScroll: 1,
   centerPadding: 0,
   centerMode: true,
+  pauseOnDotsHover: true,
   dots: true,
   arrows: false
 });
@@ -25,8 +26,9 @@ $(".dropdown").click(function() {
 // header-slider
 
 $('.header-slider').slick({
-  // autoplay: true,
+  autoplay: true,
   infinite: true,
+  pauseOnDotsHover: true,
   slidesToShow: 1,
   slidesToScroll: 1,
   centerPadding: 0,
@@ -38,8 +40,8 @@ $('.header-slider').slick({
 
 // projects slider
 
-$('.slider').slick({
-  centerMode: true,
+$('.portfolio__projects').slick({
+  // autoplay: true,
   focusOnSelect: true,
   centerPadding: '0',
   slidesToShow: 4,
@@ -49,8 +51,8 @@ $('.slider').slick({
       settings: {
         arrows: false,
         centerMode: true,
-        centerPadding: '0',
-        slidesToShow: 3
+        centerPadding: '20px',
+        slidesToShow: 1
       }
     },
     {
@@ -58,9 +60,11 @@ $('.slider').slick({
       settings: {
         arrows: false,
         centerMode: true,
-        centerPadding: '0',
+        centerPadding: '50px',
         slidesToShow: 1
       }
     }
   ]
 });
+
+
