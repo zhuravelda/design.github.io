@@ -1,17 +1,14 @@
-// .main-header {
-//   background-image: url(../../img/header-background.jpg);
-//   width: 1163px;
-//   height: 595px;
-// }
 .main-header {
   background-blend-mode: multiply;
-  background-color: rgba($color: $header-color, $alpha: 0.88);
+  background-color: $background-color;
   height: 100%;
   background-image: url(../../img/menu-desk4.jpg);
   background-repeat: no-repeat;
   height: 443px;
   position: relative;
   padding-bottom: 165px;
+  background-size: cover;
+  background-position: -600px 0;
 }
 
 .menu-button {
@@ -25,7 +22,7 @@
 
 .main-nav__tel {
   font-family: mullerultralight;
-  @include mullerultralight (400, 14px, auto);
+  @include mullerultralight (400, 14px, auto, #252525);
   display: none;
 }
 
@@ -39,7 +36,7 @@
 @media (min-width: $tablet-width) {
   .main-header {
     height: 947px;
-    // padding-top: 0;
+    background-position: -900px 0;
   }
 
 
@@ -103,54 +100,5 @@
     bottom: -55px;
     right: -510px;
   }
-
-
-
-
-
-
-  // .slider {
-  //   margin: 0;
-  //   padding: 0;
-  //   list-style: none;
-  //   width: 1166px;
-  //   height: 550px;
-  //   margin: 0 auto;
-  // }
-
-  // .slider-item {
-  //   height: 550px;
-  //   width: 25%;
-  // }
-
-  // .slider .slider-item:hover {
-  //   opacity: 0.3;
-  //   width: 150px;
-  // }
-
-  // .slider1 {
-  //   display: flex;
-  // }
-
-
-
-  // .slider-item1 {
-  //   background-color: red;
-  // }
-
-  // .slider-item2 {
-  //   background-color: rgb(77, 23, 23);
-  // }
-  // .slider-item3 {
-  //   background-color: rgb(245, 167, 167);
-  // }
-  // .slider-item4 {
-  //   background-color: rgb(31, 10, 10);
-  // }
-
-  // .slider-item5 {
-  //   background-color: rgb(70, 45, 45);
-  // }
-
 
 }

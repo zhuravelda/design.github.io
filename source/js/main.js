@@ -43,9 +43,19 @@ $('.header-slider').slick({
 $('.portfolio__projects').slick({
   // autoplay: true,
   focusOnSelect: true,
+  // mobileFirst: true,
   centerPadding: '0',
   slidesToShow: 4,
   responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '20px',
+        slidesToShow: 3
+      }
+    },
     {
       breakpoint: 768,
       settings: {
@@ -60,7 +70,7 @@ $('.portfolio__projects').slick({
       settings: {
         arrows: false,
         centerMode: true,
-        centerPadding: '50px',
+        centerPadding: '15px',
         slidesToShow: 1
       }
     }

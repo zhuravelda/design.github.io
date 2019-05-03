@@ -40,11 +40,14 @@
 
 .main-header__left-block {
   padding-top: 165px;
-  // display: none;
+  // padding-left: 15px;
+  margin-left: -15px;
+  background-color: rgba($color: $header-color, $alpha: 0.88);
+  height: 445px;
+  width: 320px;
+
+
 }
-
-
-
 
 
 @media (min-width: $tablet-width) {
@@ -74,6 +77,10 @@
 
   .main-header__left-block {
     display: block;
+    height: 100%;
+    width: 768px;
+    margin-left: -37px;
+    padding-bottom: 130px;
   }
 
   .arrow {
@@ -101,6 +108,7 @@
 
   .main-header__left-block {
     // display: none;
+    margin-left: 0;
     width: 50%;
     height: 100%;
     position: absolute;

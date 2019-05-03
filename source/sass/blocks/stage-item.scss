@@ -3,6 +3,7 @@
 }
 
 .stage-item__title {
+  position: relative;
   margin-bottom: 35px;
   @include Raleway (600, 22px, 18px, $stage-title);
 }
@@ -32,6 +33,30 @@
 
   .stage-item__text {
     @include Raleway (300, 16px, 25px, $service-text);
+  }
+
+  .stage-item__title:before {
+    content: "";
+    height: 70px;
+    width: 70px;
+    background-image: url(../../img/elips.png);
+    position: absolute;
+    // background-size: 12px 15px;
+    // left: 1010px;
+    top: -27px;
+    left: -80px;
+    background-repeat: no-repeat;
+  }
+
+  .stage-item__title:after {
+    counter-increment: myCounter;
+    content:counter(myCounter);
+    position: absolute;
+    top: -12px;
+    left: -49px;
+    @include Raleway (500, 12px, 42px, #00203a);
+    padding: 0;
+    margin: 0;
   }
 
 

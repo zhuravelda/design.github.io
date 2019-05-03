@@ -4,8 +4,12 @@
   margin-bottom: 50px;
 }
 
+.stage-item {
+  // list-style: none;
+}
+
 .stage-list {
-  list-style: none;
+  counter-reset: myCounter;
   padding: 0;
 }
 
