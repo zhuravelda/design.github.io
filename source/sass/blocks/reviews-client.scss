@@ -5,3 +5,52 @@
 .reviews-client {
   margin-bottom: 40px;
 }
+
+.slick-dots li {
+  margin: 0 8px;
+  margin-top: 10px;
+}
+
+.slick-dots li button {
+width: 26px;
+height: 3px;
+padding: 3px;
+margin-right: 10px;
+background-color: #cdd3cf;
+}
+
+.slick-dots li.slick-active button,
+.slick-dots li button:hover {
+  background-color: $buttom-slider;
+}
+
+.slick-dots li button:before {
+  content: "";
+}
+
+.slick-list {
+  margin-bottom: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews-client {
+    width: 100%;
+  }
+
+  .reviews .wrapper {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+.reviews-client {
+  width: 840px;
+  margin: 0 auto;
+  padding-right: 45px;
+}
+
+
+
+}

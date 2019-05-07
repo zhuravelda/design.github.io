@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>design</title>
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&amp;subset=cyrillic" rel="stylesheet">
@@ -15,15 +17,18 @@
   <header class="main-header">
     <div class="wrapper">
     <div class="main-header__top">
-      <div class="menu-button">
-        <button class="menu-button__open" type="button"></button>
-        <button class="menu-button__close" type="button"></button>
-      </div>
       <div class="main-header__logo">
           <a href="#" class="logo header-logo"><img src="img/logo1.png" class="logo_img" alt="Логотип дизайн-студии BRUME"></a>
           <a href="#" class="logo header-logo-desktop"><img src="img/logo.png" class="logo_img-desktop" alt="Логотип дизайн-студии BRUME"></a>
       </div>
       <a class="main-nav__tel" href="tel:+7(800)8234888">+7 (800) 823  48 88</a>
+    </div>
+    <div class="wrapper-toggle">
+      <div class="toggle">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
     </div>
     <nav class="main-nav">
       <ul class="header-menu">
@@ -33,8 +38,21 @@
         <li class="header-menu__item"><a href="#">Наши услуги</a></li>
         <li class="header-menu__item"><a href="#">Отзывы</a></li>
         <li class="header-menu__item"><a href="#">Контакты</a></li>
+        <li class="nav-social__item">
+          <ul class="nav-social--menu">
+            <li class="social__item--menu social__header-item--vkontakte"><a href="#"></a></li>
+            <li class="social__item--menu social__header-item--instagram"><a href="#"></a></li>
+            <li class="social__item--menu social__header-item--facebook"><a href="#"></a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
+    <ul class="header-slider">
+      <li class="header-slider__item"><img src="img/menu-desk4.jpg" alt=""></li>
+      <li class="header-slider__item"><img src="img/menu-desk1.jpg" alt=""></li>
+      <li class="header-slider__item"><img src="img/menu-desk2.jpg" alt=""></li>
+      <li class="header-slider__item"><img src="img/menu-desk3.jpg" alt=""></li>
+    </ul>
     <div class="main-header__left-block">
       <h1 class="main-header__title">Дизайн интерьеров</h1>
       <p class="main-header__text">Воплотим в жизнь интерьер, который будет радовать лаконичностью и уютом.</p>
@@ -42,9 +60,9 @@
       <div class="arrow"></div>
     </div>
     <ul class="nav-social">
-      <li class="social__item--menu social__header-item--vkontakte"></li>
-      <li class="social__item--menu social__header-item--instagram"></li>
-      <li class="social__item--menu social__header-item--facebook"></li>
+      <li class="social__item--menu social__header-item--vkontakte"><a href="#"></a></li>
+      <li class="social__item--menu social__header-item--instagram"><a href="#"></a></li>
+      <li class="social__item--menu social__header-item--facebook"><a href="#"></a></li>
     </ul>
   </div>
 
@@ -89,24 +107,44 @@
       </div>
       <ul class="portfolio__projects">
         <li class="projects__item">
-          <h3 class="projects-item__title projects-item__title--active">Дизайн интерьера гостиной </h3>
-          <p class="projects-item__text">Дизайн интерьера</p>
-          <img src="img/one-pat-slider.jpg" width="260" height="550" alt="Дизайн интерьера гостиной">
+          <div class="projects__item--wrap">
+              <h3 class="projects-item__title">Дизайн интерьера<br>гостиной </h3>
+              <p class="projects-item__text">Дизайн интерьера</p>
+              <button type="button" class="projects__item--button" ></button>
+          </div>
+          <img src="img/1-pat-slider.jpg" height="552" alt="Дизайн интерьера гостиной">
         </li>
         <li class="projects__item">
-          <h3 class="projects-item__title"></h3>
-          <p class="projects-item__text"></p>
-          <img src="img/second-pat-slider.jpg" width="390" height="250" alt="Дизайн интерьера">
+          <div class="projects__item--wrap">
+              <h3 class="projects-item__title">Дизайн столовой<br>в стиле «Бохо»</h3>
+              <p class="projects-item__text">Дизайн интерьера</p>
+              <button type="button" class="projects__item--button" ></button>
+            </div>
+          <img src="img/2-pat-slider.jpg" height="552" alt="Дизайн интерьера">
         </li>
         <li class="projects__item">
-          <h3 class="projects-item__title">Дизайн столовой в стиле «Бохо»</h3>
-          <p class="projects-item__text">Дизайн интерьера</p>
-          <img src="img/third-pat-slider.jpg" width="260" height="550" alt="Дизайн столовой в стиле «Бохо»">
+          <div class="projects__item--wrap">
+              <h3 class="projects-item__title">Дизайн столовой<br>в стиле «Бохо»</h3>
+              <p class="projects-item__text">Дизайн интерьера</p>
+              <button type="button" class="projects__item--button" ></button>
+            </div>
+          <img src="img/3-pat-slider.jpg" height="552" alt="Дизайн столовой в стиле «Бохо»">
         </li>
         <li class="projects__item">
-          <h3 class="projects-item__title">Лофт интерьер для отеля Hiloft</h3>
-          <p class="projects-item__text">Дизайн интерьера</p>
-          <img class="seilor" src="img/fourth-pat-slider.jpg" width="260" height="550" alt="Лофт интерьер для отеля Hiloft">
+          <div class="projects__item--wrap">
+              <h3 class="projects-item__title">Лофт интерьер<br>для отеля Hiloft</h3>
+              <p class="projects-item__text">Дизайн интерьера</p>
+              <button type="button" class="projects__item--button" ></button>
+            </div>
+          <img class="seilor" src="img/4-pat-slider.jpg" height="552" alt="Лофт интерьер для отеля Hiloft">
+        </li>
+        <li class="projects__item">
+          <div class="projects__item--wrap">
+              <h3 class="projects-item__title">Дизайн столовой<br>в стиле «Бохо»</h3>
+              <p class="projects-item__text">Дизайн интерьера</p>
+              <button type="button" class="projects__item--button" ></button>
+            </div>
+          <img src="img/3-pat-slider.jpg" height="552" alt="Дизайн столовой в стиле «Бохо»">
         </li>
       </ul>
       <button class="portfolio__button--left" type="button"></button>
@@ -148,7 +186,7 @@
     <section class="stage-projeсt">
       <div class="wrapper">
       <h2 class="stage-project__title">Этапы работы</h2>
-      <ul class="stage-list">
+      <ol class="stage-list">
         <li class="stage-item">
           <h3 class="stage-item__title">Консультация</h3>
           <div class="stage-item--line"></div>
@@ -179,7 +217,7 @@
           <div class="stage-item--line"></div>
           <p class="stage-item__text">Подбираем мебель, отделочные материалы, светильники и текстиль. Декорируем интерьер.</p>
         </li>
-      </ul>
+      </ol>
       </div>
     </section>
     <section class="block-form">
@@ -208,39 +246,27 @@
       <div class="block-form__side-picture"></div>
     </section>
     <section class="reviews">
-      <div class="wrapper">
+      <div class="reviews-wrapper">
       <h2 class="reviews__title">Отзывы наших клиентов</h2>
       <ul class="reviews-client">
         <li class="reviews-box">
-          <h3 class="reviews-box__title"></h3>
-          <p class="reviews-box__title-service"></p>
-          <p class="reviews-box__text"></p>
-          <img class="reviews-box__img" width="200" height="190" src="img/HIPSTER.jpg" alt="">
+          <img class="reviews-box__img" src="img/HIPSTER.jpg" alt="">
+          <h3 class="reviews-box__title">Игорь Горбунов</h3>
+          <p class="reviews-box__title-service">Услуга: инерьер детской</p>
+          <p class="reviews-box__text">Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и легко, команда выполнила все точно в срок, сделали все как  мы и хотели. В следующий раз обратимся к BRUME!</p>
         </li>
-        <li class="reviews-box reviews-box--active">
-          <img class="reviews-box__img"  src="img/girl.png" alt="">
+        <li class="reviews-box">
+          <img class="reviews-box__img"  src="img/girl.jpg" alt="">
           <h3 class="reviews-box__title">Александра Холодная</h3>
           <p class="reviews-box__title-service">Услуга: инерьер детской</p>
           <p class="reviews-box__text">Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и легко, команда выполнила все точно в срок, сделали все как  мы и хотели. В следующий раз обратимся к BRUME!</p>
         </li>
         <li class="reviews-box">
-          <h3 class="reviews-box__title"></h3>
-          <p class="reviews-box__title-service"></p>
-          <p class="reviews-box__text"></p>
-          <img class="reviews-box__img" width="200" height="190" src="img/girl2.jpg" alt="">
+          <img class="reviews-box__img" src="img/girl2.jpg" alt="">
+          <h3 class="reviews-box__title">Ирина Бережная</h3>
+          <p class="reviews-box__title-service">Услуга: инерьер детской</p>
+          <p class="reviews-box__text">Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и легко, команда выполнила все точно в срок, сделали все как  мы и хотели. В следующий раз обратимся к BRUME!</p>
         </li>
-        <li class="reviews-box">
-          <h3 class="reviews-box__title"></h3>
-          <p class="reviews-box__title-service"></p>
-          <p class="reviews-box__text"></p>
-          <img class="reviews-box__img" width="200" height="190" src="#" alt="">
-        </li>
-      </ul>
-      <ul class="reviews-button">
-        <li class="reviews-button__item"></li>
-        <li class="reviews-button__item"></li>
-        <li class="reviews-button__item"></li>
-        <li class="reviews-button__item"></li>
       </ul>
       </div>
     </section>
@@ -264,7 +290,12 @@
   </footer>
 </div>
 
-<script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+<!-- <script>
 var link = document.querySelector(".menu-button__open");
 var oupenmenu = document.querySelector(".main-nav");
 var closemenu = document.querySelector(".menu-button__close");
@@ -278,7 +309,7 @@ closemenu.addEventListener("click", function (evt) {
   evt.preventDefault();
   oupenmenu.classList.remove("menu-show");
 });
-</script>
+</script> -->
 
 </body>
 

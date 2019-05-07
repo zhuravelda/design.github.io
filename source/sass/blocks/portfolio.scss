@@ -25,26 +25,69 @@
 }
 
 .portfolio__projects {
-  background-color: $background-portfolio;
+  list-style: none;
 }
 
 .projects-item__title {
-  @include Raleway (600, 18px, auto, $main-text-color);
+  display: block;
+  margin-left: 40px;
+  position: absolute;
+  @include Raleway (600, 18px, auto, $title-blocks);
   &--active {
     @include Raleway (600, 18px, auto, $title-blocks);
   }
 }
 
+.projects-item__text {
+  display: none;
+}
+
 .portfolio__projects {
-  padding-bottom: 130px;
+  padding-left: 0;
   display: flex;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .portfolio__button--left,
 .portfolio__button--right {
   display: none;
 }
+
+.projects__item--wrap .projects__item--button:hover {
+  cursor: pointer;
+}
+
+.projects__item--button {
+  height: 84px;
+  width: 84px;
+  border-radius: 50%;
+  background-color: red;
+  background-image: url(../../img/plus.jpg);
+  background-repeat: no-repeat;
+  background-position: -18px -15px;
+  opacity: 0.95;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  display: none;
+}
+
+.projects__item--wrap:hover .projects__item--button {
+  display: block;
+}
+
+.slick-slider .slick-list {
+  margin-bottom: 0;
+}
+
+.projects__item {
+  margin: 0 10px;
+}
+
+
 
 
 @media (min-width: $tablet-width) {
@@ -55,10 +98,6 @@
   .portfolio__list {
     display: flex;
     justify-content: space-between;
-  }
-
-  .portfolio__projects {
-    min-height: 615px;
   }
 
 }
@@ -87,6 +126,73 @@
   .portfolio__title {
     margin-bottom: 60px;
   }
+
+  .projects__item {
+    position: relative;
+    margin: 0;
+  }
+
+  .projects__item img {
+    height: 552px;
+    top: 0;
+    left: 0;
+  }
+
+  .projects-item__text {
+    display: block;
+    position: absolute;
+    bottom: 70px;
+    left: -40px;
+    transform: rotate(270deg);
+  }
+
+  .projects-item__title {
+    position: absolute;
+    top: 30px;
+    left: -20px;
+  }
+
+  .projects-item__title--active {
+    color: white;
+  }
+
+  .projects__item--wrap {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: $base-color;
+    opacity: 0.8;
+
+  }
+
+
+  .projects__item--wrap:hover {
+    background-color: rgba($color: $base-color, $alpha: 0);
+
+  }
+
+  .projects__item--wrap:hover .projects-item__title,
+  .projects__item--wrap:hover .projects-item__text {
+    display: none;
+  }
+
+
+  .slick-prev:before, .slick-next:before {
+    font-size: 40px;
+  }
+
+  .slick-next {
+    right: 120px;
+}
+
+.slick-prev {
+  z-index: 10;
+  left: 120px;
+}
+
+.projects-item__title {
+  color: white;
+}
 
 }
 
